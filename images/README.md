@@ -1,20 +1,26 @@
 # Imágenes
 
-Coloca aquí las fotos del sitio. Se cargan automáticamente por su nombre;
-si un archivo no existe, el sitio muestra un marcador elegante en su lugar.
+Guarda aquí las fotos del sitio con **exactamente** estos nombres. Se cargan
+automáticamente; si un archivo no existe, el sitio muestra un marcador elegante.
 
-| Archivo         | Uso                                   | Recomendación        |
-|-----------------|---------------------------------------|----------------------|
-| `hero.jpg`      | Fondo del encabezado principal        | 1600×900 px o mayor  |
-| `galeria-1.jpg` | Galería — fachada                     | ~1200×900 px         |
-| `galeria-2.jpg` | Galería — café                        | ~1200×900 px         |
-| `galeria-3.jpg` | Galería — postres                     | ~1200×900 px         |
-| `galeria-4.jpg` | Galería — interior                    | ~1200×900 px         |
-| `galeria-5.jpg` | Galería — servicio de té              | ~1200×900 px         |
-| `galeria-6.jpg` | Galería — paninis                     | ~1200×900 px         |
+## Fotos que ya elegimos (de las que enviaste)
+
+| Foto                                                   | Guárdala como                 | Se usa en           |
+|--------------------------------------------------------|-------------------------------|---------------------|
+| Capuchino en taza floral con canela                    | `especialidad-cafe.jpg`       | Div "Café" + galería |
+| Vista superior de 4 tazas (matcha y lattes) con flores | `especialidad-te.jpg`         | Div "Tés" + galería  |
+| Cheesecake de fresa con crema                          | `especialidad-postres.jpg`    | Div "Postres" + galería |
+| Panini con puré en plato de hiedra                     | `galeria-panini.jpg`          | Galería             |
+| Cupcake con corazón rojo                               | `galeria-cupcake.jpg`         | Galería             |
+
+## Opcional
+
+| Archivo      | Uso                                   | Recomendación       |
+|--------------|---------------------------------------|---------------------|
+| `hero.jpg`   | Fondo del encabezado principal        | 1600×900 px o mayor |
 
 Consejos:
-- Usa formato `.jpg` para fotos (más ligero) y comprime antes de subir.
-- Fotos horizontales lucen mejor en la galería.
-- Puedes cambiar los nombres o agregar más entradas editando el arreglo
+- Usa formato `.jpg` y comprime las fotos antes de subirlas (cargan más rápido).
+- Fotos horizontales lucen mejor; el sitio las recorta al centro automáticamente.
+- Para cambiar nombres o agregar más fotos a la galería, edita el arreglo
   `GALERIA` en `../app.js`.

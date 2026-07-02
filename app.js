@@ -4,10 +4,9 @@
    =========================================================== */
 
 const CONFIG = {
-  // ⬇️ REEMPLAZA por el número real de WhatsApp del negocio.
-  //    Formato: lada de país + número, SIN "+", espacios ni guiones.
-  //    Ejemplo México: 52 (país) + 55 1234 5678  ->  "525512345678"
-  whatsapp: "521234567890",
+  // Número de WhatsApp del negocio: 52 (México) + 612 291 0636.
+  // Si algún teléfono no abre el chat, prueba con "5216122910636".
+  whatsapp: "526122910636",
   nombreNegocio: "REVU 1910",
 };
 
@@ -172,12 +171,11 @@ function initTabs() {
 
 /* --------------------------- Galería ----------------------------- */
 const GALERIA = [
-  { src: "images/galeria-1.jpg", alt: "Fachada de REVU 1910", etiqueta: "La fachada" },
-  { src: "images/galeria-2.jpg", alt: "Café de especialidad", etiqueta: "El café" },
-  { src: "images/galeria-3.jpg", alt: "Postres caseros", etiqueta: "Los postres" },
-  { src: "images/galeria-4.jpg", alt: "Interior de la casa de té", etiqueta: "El rincón" },
-  { src: "images/galeria-5.jpg", alt: "Servicio de té", etiqueta: "Servicio de té" },
-  { src: "images/galeria-6.jpg", alt: "Paninis artesanales", etiqueta: "Paninis" },
+  { src: "images/galeria-panini.jpg", alt: "Panini artesanal con guarnición", etiqueta: "Paninis" },
+  { src: "images/especialidad-postres.jpg", alt: "Cheesecake de fresa", etiqueta: "Cheesecake" },
+  { src: "images/galeria-cupcake.jpg", alt: "Cupcake con detalle de corazón", etiqueta: "Repostería" },
+  { src: "images/especialidad-te.jpg", alt: "Matcha y lattes en vajilla de época", etiqueta: "Tés & lattes" },
+  { src: "images/especialidad-cafe.jpg", alt: "Capuchino en taza floral", etiqueta: "El café" },
 ];
 
 function renderGaleria() {
