@@ -3,25 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cafetería</title>
+  <title>REVU 1910 · Casa de Té y Café</title>
+  <meta name="description" content="REVU 1910 — Casa de té y café con encanto de principios del siglo XX. Paninis artesanales, cafés de especialidad, tés, postres caseros y servicio de té. Reserva por WhatsApp." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>☕ Cafetería</h1>
-    <p>Café recién hecho, todos los días</p>
+
+  <!-- ===== Barra de navegación ===== -->
+  <header class="nav" id="inicio">
+    <div class="nav__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark">REVU <span>1910</span></span>
+        <span class="brand__sub">Tea &amp; Coffee</span>
+      </a>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#historia">Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#visita">Visítanos</a>
+        <a class="btn btn--ghost btn--sm" href="#reservar">Reservar</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Menú</h2>
-      <ul id="menu"></ul>
-    </section>
-  </main>
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Casa de té &amp; café · est. 1910</p>
+      <h1 class="hero__title">REVU <span>1910</span></h1>
+      <p class="hero__script">Un rincón de otra época</p>
+      <p class="hero__lead">
+        Cafés de especialidad, tés selectos, paninis artesanales y postres caseros,
+        servidos con el encanto de principios del siglo&nbsp;XX.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="#reservar">Reservar por WhatsApp</a>
+        <a class="btn btn--outline" href="#menu">Ver el menú</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">✦</div>
+  </section>
 
-  <footer>
-    <p>Abierto de lunes a sábado, 7:00 a 20:00</p>
+  <!-- ===== Historia ===== -->
+  <section class="section historia" id="historia">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <h2 class="section__title">Nuestra casa</h2>
+    <p class="section__intro">
+      Entre muros de ladrillo y herrería verdigris, REVU&nbsp;1910 recupera la calidez
+      de las antiguas casas de té. Cada taza se prepara con calma, cada postre se hornea
+      en casa y cada visita es una pausa fuera del tiempo.
+    </p>
+    <div class="pillars">
+      <article class="pillar">
+        <div class="pillar__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="44" height="44"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 30h34a4 4 0 0 1 0 8h-2"/><path d="M12 30c0 12 6 20 17 20s17-8 17-20"/><path d="M20 20c-2-3 1-5 0-8M28 20c-2-3 1-5 0-8M36 20c-2-3 1-5 0-8"/></g></svg>
+        </div>
+        <h3>Café de especialidad</h3>
+        <p>Espresso, latte, mocha y matcha preparados por baristas, calientes o helados.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="44" height="44"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 26h30v10c0 9-7 16-15 16S14 45 14 36z"/><path d="M44 30h4a5 5 0 0 1 0 10h-4"/><path d="M22 12c8 3-8 7 0 10M32 12c8 3-8 7 0 10"/><path d="M10 56h40"/></g></svg>
+        </div>
+        <h3>Tés selectos</h3>
+        <p>Chai, matcha e infusiones de temporada servidos en vajilla de época.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="44" height="44"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 40h44v6a4 4 0 0 1-4 4H14a4 4 0 0 1-4-4z"/><path d="M14 40c0-10 8-16 18-16s18 6 18 16"/><path d="M32 24v-6"/><circle cx="32" cy="14" r="3"/></g></svg>
+        </div>
+        <h3>Postres caseros</h3>
+        <p>Selva negra, cheesecake, tiramisú y tartas de temporada recién hechas.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Menú ===== -->
+  <section class="section menu" id="menu">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <h2 class="section__title">El menú</h2>
+    <p class="section__intro">Precios en pesos mexicanos. Algunos sabores varían por temporada — pregunta por existencias.</p>
+
+    <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Categorías del menú">
+      <button class="menu__tab is-active" data-cat="paninis" role="tab">Paninis</button>
+      <button class="menu__tab" data-cat="bebidas" role="tab">Bebidas</button>
+      <button class="menu__tab" data-cat="postres" role="tab">Postres</button>
+      <button class="menu__tab" data-cat="servicio" role="tab">Servicio de té</button>
+    </div>
+
+    <div class="menu__panels" id="menuPanels"><!-- render en app.js --></div>
+  </section>
+
+  <!-- ===== Galería ===== -->
+  <section class="section galeria" id="galeria">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <h2 class="section__title">Galería</h2>
+    <p class="section__intro">Un vistazo a nuestro rincón. (Coloca tus fotos en la carpeta <code>images/</code> — ver notas abajo.)</p>
+    <div class="gallery" id="gallery"><!-- render en app.js --></div>
+  </section>
+
+  <!-- ===== Reservar ===== -->
+  <section class="section reservar" id="reservar">
+    <div class="reservar__card">
+      <div class="ornament ornament--light" aria-hidden="true">❦</div>
+      <h2 class="section__title">Reserva tu mesa</h2>
+      <p class="section__intro">Completa los datos y te llevaremos a WhatsApp con tu mensaje ya listo para enviar.</p>
+
+      <form class="form" id="reservaForm">
+        <div class="form__row">
+          <label>Nombre
+            <input type="text" name="nombre" required placeholder="Tu nombre" />
+          </label>
+          <label>Personas
+            <input type="number" name="personas" min="1" value="2" required />
+          </label>
+        </div>
+        <div class="form__row">
+          <label>Fecha
+            <input type="date" name="fecha" required />
+          </label>
+          <label>Hora
+            <input type="time" name="hora" required />
+          </label>
+        </div>
+        <label>Notas <span class="muted">(opcional)</span>
+          <textarea name="notas" rows="2" placeholder="Cumpleaños, servicio de té, alergias…"></textarea>
+        </label>
+        <button class="btn btn--gold btn--block" type="submit">Enviar por WhatsApp</button>
+        <p class="form__hint" id="waHint"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Visítanos / Footer ===== -->
+  <footer class="footer" id="visita">
+    <div class="footer__grid">
+      <div>
+        <span class="brand__mark brand__mark--light">REVU <span>1910</span></span>
+        <p class="footer__tag">Casa de té &amp; café</p>
+      </div>
+      <div>
+        <h4>Horario</h4>
+        <p>Lunes a sábado<br />7:00 – 20:00</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p><a id="waLink" href="#reservar">WhatsApp</a><br /><span class="muted">Reserva en línea</span></p>
+      </div>
+      <div>
+        <h4>Ubicación</h4>
+        <p class="muted">Añade tu dirección<br />y mapa aquí</p>
+      </div>
+    </div>
+    <p class="footer__legal">© <span id="year"></span> REVU 1910 · Tea &amp; Coffee. Hecho con cariño.</p>
   </footer>
+
+  <a class="wa-float" id="waFloat" href="#reservar" aria-label="Reservar por WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.3 10.3 0 0 1-1.6-5.6c0-5.7 4.7-10.4 10.5-10.4s10.4 4.7 10.4 10.4S21.8 25.8 16 25.8zm5.8-7.8c-.3-.2-1.9-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.5 8.5 0 0 1-2.5-1.5 9.3 9.3 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3.4 3.4 0 0 0-1 2.5c0 1.5 1.1 2.9 1.2 3.1s2.1 3.3 5.1 4.6c.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5s-.2-.2-.5-.4z"/></svg>
+    <span>Reservar</span>
+  </a>
 
   <script src="app.js"></script>
 </body>
