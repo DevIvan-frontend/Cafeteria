@@ -22,11 +22,12 @@
         <span class="brand__sub">Tea &amp; Coffee</span>
       </a>
       <nav class="nav__links" aria-label="Navegación principal">
-        <a href="#historia">Nosotros</a>
-        <a href="#menu">Menú</a>
-        <a href="#galeria">Galería</a>
-        <a href="#visita">Visítanos</a>
-        <a class="btn btn--ghost btn--sm" href="#reservar">Reservar</a>
+        <a href="#historia" data-i18n="nav.about">Nosotros</a>
+        <a href="#menu" data-i18n="nav.menu">Menú</a>
+        <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+        <a href="#visita" data-i18n="nav.visit">Visítanos</a>
+        <a class="btn btn--ghost btn--sm" href="#reservar" data-i18n="nav.reserve">Reservar</a>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language">EN</button>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">☰</button>
     </div>
@@ -36,16 +37,16 @@
   <section class="hero">
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="hero__eyebrow">Casa de té &amp; café · est. 1910</p>
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café · est. 1910</p>
       <h1 class="hero__title">REVU <span>1910</span></h1>
-      <p class="hero__script">Un rincón de otra época</p>
-      <p class="hero__lead">
+      <p class="hero__script" data-i18n="hero.script">Un rincón de otra época</p>
+      <p class="hero__lead" data-i18n="hero.lead">
         Cafés de especialidad, tés selectos, paninis artesanales y postres caseros,
-        servidos con el encanto de principios del siglo&nbsp;XX.
+        servidos con el encanto de principios del siglo XX.
       </p>
       <div class="hero__actions">
-        <a class="btn btn--gold" href="#reservar">Reservar por WhatsApp</a>
-        <a class="btn btn--outline" href="#menu">Ver el menú</a>
+        <a class="btn btn--gold" href="#reservar" data-i18n="hero.cta1">Reservar por WhatsApp</a>
+        <a class="btn btn--outline" href="#menu" data-i18n="hero.cta2">Ver el menú</a>
       </div>
     </div>
     <div class="hero__scroll" aria-hidden="true">✦</div>
@@ -54,9 +55,9 @@
   <!-- ===== Historia ===== -->
   <section class="section historia" id="historia">
     <div class="ornament" aria-hidden="true">❦</div>
-    <h2 class="section__title">Nuestra casa</h2>
-    <p class="section__intro">
-      Entre muros de ladrillo y herrería verdigris, REVU&nbsp;1910 recupera la calidez
+    <h2 class="section__title" data-i18n="about.title">Nuestra casa</h2>
+    <p class="section__intro" data-i18n="about.intro">
+      Entre muros de ladrillo y herrería verdigris, REVU 1910 recupera la calidez
       de las antiguas casas de té. Cada taza se prepara con calma, cada postre se hornea
       en casa y cada visita es una pausa fuera del tiempo.
     </p>
@@ -70,8 +71,8 @@
           </div>
         </figure>
         <div class="pillar__body">
-          <h3>Café de especialidad</h3>
-          <p>Espresso, latte, mocha y matcha preparados por baristas, calientes o helados.</p>
+          <h3 data-i18n="pillar.coffee.title">Café de especialidad</h3>
+          <p data-i18n="pillar.coffee.text">Espresso, latte, mocha y matcha preparados por baristas, calientes o helados.</p>
         </div>
       </article>
       <article class="pillar">
@@ -83,8 +84,8 @@
           </div>
         </figure>
         <div class="pillar__body">
-          <h3>Tés selectos</h3>
-          <p>Chai, matcha e infusiones de temporada servidos en vajilla de época.</p>
+          <h3 data-i18n="pillar.tea.title">Tés selectos</h3>
+          <p data-i18n="pillar.tea.text">Chai, matcha e infusiones de temporada servidos en vajilla de época.</p>
         </div>
       </article>
       <article class="pillar">
@@ -96,8 +97,8 @@
           </div>
         </figure>
         <div class="pillar__body">
-          <h3>Postres caseros</h3>
-          <p>Selva negra, cheesecake, tiramisú y tartas de temporada recién hechas.</p>
+          <h3 data-i18n="pillar.dessert.title">Postres caseros</h3>
+          <p data-i18n="pillar.dessert.text">Selva negra, cheesecake, tiramisú y tartas de temporada recién hechas.</p>
         </div>
       </article>
     </div>
@@ -106,14 +107,14 @@
   <!-- ===== Menú ===== -->
   <section class="section menu" id="menu">
     <div class="ornament" aria-hidden="true">❦</div>
-    <h2 class="section__title">El menú</h2>
-    <p class="section__intro">Precios en pesos mexicanos. Algunos sabores varían por temporada — pregunta por existencias.</p>
+    <h2 class="section__title" data-i18n="menu.title">El menú</h2>
+    <p class="section__intro" data-i18n="menu.intro">Precios en pesos mexicanos. Algunos sabores varían por temporada — pregunta por existencias.</p>
 
     <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Categorías del menú">
-      <button class="menu__tab is-active" data-cat="paninis" role="tab">Paninis</button>
-      <button class="menu__tab" data-cat="bebidas" role="tab">Bebidas</button>
-      <button class="menu__tab" data-cat="postres" role="tab">Postres</button>
-      <button class="menu__tab" data-cat="servicio" role="tab">Servicio de té</button>
+      <button class="menu__tab is-active" data-cat="paninis" data-i18n="menu.tab.paninis" role="tab">Paninis</button>
+      <button class="menu__tab" data-cat="bebidas" data-i18n="menu.tab.drinks" role="tab">Bebidas</button>
+      <button class="menu__tab" data-cat="postres" data-i18n="menu.tab.desserts" role="tab">Postres</button>
+      <button class="menu__tab" data-cat="servicio" data-i18n="menu.tab.tea" role="tab">Servicio de té</button>
     </div>
 
     <div class="menu__panels" id="menuPanels"><!-- render en app.js --></div>
@@ -122,8 +123,8 @@
   <!-- ===== Galería ===== -->
   <section class="section galeria" id="galeria">
     <div class="ornament" aria-hidden="true">❦</div>
-    <h2 class="section__title">Galería</h2>
-    <p class="section__intro">Un vistazo a nuestro rincón.</p>
+    <h2 class="section__title" data-i18n="gallery.title">Galería</h2>
+    <p class="section__intro" data-i18n="gallery.intro">Un vistazo a nuestro rincón.</p>
     <div class="gallery" id="gallery"><!-- render en app.js --></div>
   </section>
 
@@ -131,66 +132,85 @@
   <section class="section reservar" id="reservar">
     <div class="reservar__card">
       <div class="ornament ornament--light" aria-hidden="true">❦</div>
-      <h2 class="section__title">Reserva tu mesa</h2>
-      <p class="section__intro">Completa los datos y te llevaremos a WhatsApp con tu mensaje ya listo para enviar.</p>
+      <h2 class="section__title" data-i18n="reserve.title">Reserva tu mesa</h2>
+      <p class="section__intro" data-i18n="reserve.intro">Completa los datos y te llevaremos a WhatsApp con tu mensaje ya listo para enviar.</p>
 
       <form class="form" id="reservaForm">
         <div class="form__row">
-          <label>Nombre
-            <input type="text" name="nombre" required placeholder="Tu nombre" />
+          <label><span data-i18n="form.name">Nombre</span>
+            <input type="text" name="nombre" required data-i18n-ph="form.namePh" placeholder="Tu nombre" />
           </label>
-          <label>Personas
+          <label><span data-i18n="form.people">Personas</span>
             <input type="number" name="personas" min="1" value="2" required />
           </label>
         </div>
         <div class="form__row">
-          <label>Fecha
+          <label><span data-i18n="form.date">Fecha</span>
             <input type="date" name="fecha" required />
           </label>
-          <label>Hora
-            <input type="time" name="hora" required />
+          <label><span data-i18n="form.time">Hora</span>
+            <select name="hora" id="horaSelect" required><!-- opciones en app.js --></select>
           </label>
         </div>
-        <label>Notas <span class="muted">(opcional)</span>
-          <textarea name="notas" rows="2" placeholder="Cumpleaños, servicio de té, alergias…"></textarea>
+        <label><span data-i18n="form.notes">Notas</span> <span class="muted" data-i18n="form.optional">(opcional)</span>
+          <textarea name="notas" rows="2" data-i18n-ph="form.notesPh" placeholder="Cumpleaños, servicio de té, alergias…"></textarea>
         </label>
-        <button class="btn btn--gold btn--block" type="submit">Enviar por WhatsApp</button>
+        <button class="btn btn--gold btn--block" type="submit" data-i18n="form.submit">Enviar por WhatsApp</button>
         <p class="form__hint" id="waHint"></p>
       </form>
     </div>
   </section>
 
-  <!-- ===== Visítanos / Footer ===== -->
-  <footer class="footer" id="visita">
+  <!-- ===== Ubicación / mapa ===== -->
+  <section class="section ubicacion" id="visita">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <h2 class="section__title" data-i18n="map.title">Cómo llegar</h2>
+    <p class="section__intro">
+      Calle Revolución #1445, <span data-i18n="footer.cross">e/ Reforma e Independencia</span>,
+      Zona Central, 23000 La Paz, B.C.S.
+    </p>
+    <div class="map">
+      <iframe class="map__frame" title="Mapa de REVU 1910"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-110.3236%2C24.1526%2C-110.3116%2C24.1606&layer=mapnik&marker=24.1566%2C-110.3176"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="ubicacion__actions">
+      <a class="btn btn--ghost" id="mapLink" target="_blank" rel="noopener"
+         href="https://www.google.com/maps/search/?api=1&amp;query=REVU%201910%20Calle%20Revoluci%C3%B3n%201445%20Zona%20Central%20La%20Paz%20BCS%2023000"
+         data-i18n="footer.maps">Ver en Google Maps →</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
     <div class="footer__grid">
       <div>
         <span class="brand__mark brand__mark--light">REVU <span>1910</span></span>
-        <p class="footer__tag">Casa de té &amp; café</p>
+        <p class="footer__tag" data-i18n="footer.tag">Casa de té &amp; café</p>
       </div>
       <div>
-        <h4>Horario</h4>
-        <p>Todos los días<br />16:00 – 22:00</p>
+        <h4 data-i18n="footer.hoursTitle">Horario</h4>
+        <p data-i18n-html="footer.hoursValue">Todos los días<br />16:00 – 22:00</p>
       </div>
       <div>
-        <h4>Contacto</h4>
-        <p><a id="waLink" href="#reservar">WhatsApp</a><br /><span class="muted">Reserva en línea</span></p>
+        <h4 data-i18n="footer.contactTitle">Contacto</h4>
+        <p><a id="waLink" href="#reservar">WhatsApp</a><br /><span class="muted" data-i18n="footer.contactSub">Reserva en línea</span></p>
       </div>
       <div>
-        <h4>Ubicación</h4>
+        <h4 data-i18n="footer.locationTitle">Ubicación</h4>
         <p>
           Calle Revolución #1445<br />
-          e/ Reforma e Independencia<br />
-          Zona Central, 23000 La Paz, B.C.S.<br />
-          <a id="mapLink" href="https://www.google.com/maps/search/?api=1&amp;query=REVU%201910%20Calle%20Revoluci%C3%B3n%201445%20Zona%20Central%20La%20Paz%20BCS%2023000" target="_blank" rel="noopener">Ver en Google Maps →</a>
+          <span data-i18n="footer.cross">e/ Reforma e Independencia</span><br />
+          Zona Central, 23000 La Paz, B.C.S.
         </p>
       </div>
     </div>
-    <p class="footer__legal">© <span id="year"></span> REVU 1910 · Tea &amp; Coffee. Hecho con cariño.</p>
+    <p class="footer__legal">© <span id="year"></span> REVU 1910 · Tea &amp; Coffee. <span data-i18n="footer.love">Hecho con cariño.</span></p>
   </footer>
 
   <a class="wa-float" id="waFloat" href="#reservar" aria-label="Reservar por WhatsApp">
     <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-1.8c1.9 1 4 1.6 6.1 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.8c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.3 10.3 0 0 1-1.6-5.6c0-5.7 4.7-10.4 10.5-10.4s10.4 4.7 10.4 10.4S21.8 25.8 16 25.8zm5.8-7.8c-.3-.2-1.9-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.5 8.5 0 0 1-2.5-1.5 9.3 9.3 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.5l-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4a3.4 3.4 0 0 0-1 2.5c0 1.5 1.1 2.9 1.2 3.1s2.1 3.3 5.1 4.6c.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5s-.2-.2-.5-.4z"/></svg>
-    <span>Reservar</span>
+    <span data-i18n="nav.reserve">Reservar</span>
   </a>
 
   <script src="app.js"></script>
