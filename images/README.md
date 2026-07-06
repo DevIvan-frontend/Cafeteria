@@ -13,11 +13,12 @@ automáticamente; si un archivo no existe, el sitio muestra un marcador elegante
 | Panini con puré en plato de hiedra                     | `galeria-panini.jpg`          | Galería             |
 | Cupcake con corazón rojo                               | `galeria-cupcake.jpg`         | Galería             |
 
-## Opcional
+## Generadas para el rediseño temático
 
-| Archivo      | Uso                                   | Recomendación       |
-|--------------|---------------------------------------|---------------------|
-| `hero.jpg`   | Fondo del encabezado principal        | 1600×900 px o mayor |
+| Archivo        | Uso                              | Origen |
+|----------------|----------------------------------|--------|
+| `hero.jpg`     | Fondo del encabezado (duotono)   | Derivada de `especialidad-te.jpg` (foto propia) |
+| `era-1910.jpg` | Cinta histórica "1910"           | Fotografía de 1911 (junta revolucionaria), dominio público — Wikimedia Commons, `Toma_de_Juarez_highres.jpg`, recortada y en duotono sepia |
 
 Consejos:
 - Usa formato `.jpg` y comprime las fotos antes de subirlas (cargan más rápido).

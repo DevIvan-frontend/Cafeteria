@@ -34,7 +34,7 @@ const I18N = {
   "nav.visit":        { es: "Visítanos", en: "Visit" },
   "nav.reserve":      { es: "Reservar", en: "Reserve" },
 
-  "hero.eyebrow":     { es: "Casa de té & café · est. 1910", en: "Tea & coffee house · est. 1910" },
+  "hero.eyebrow":     { es: "Casa de té & café", en: "Tea & coffee house" },
   "hero.script":      { es: "Un rincón de otra época", en: "A corner from another era" },
   "hero.lead":        {
     es: "Cafés de especialidad, tés selectos, paninis artesanales y postres caseros, servidos con el encanto de principios del siglo XX.",
@@ -55,7 +55,15 @@ const I18N = {
   "pillar.dessert.title":{ es: "Postres caseros", en: "Homemade desserts" },
   "pillar.dessert.text": { es: "Selva negra, cheesecake, tiramisú y tartas de temporada recién hechas.", en: "Black forest, cheesecake, tiramisu and freshly made seasonal cakes." },
 
+  "era.title":        { es: "El año que nos da nombre", en: "The year that gives us our name" },
+  "era.text":         {
+    es: "Nuestra casa vive sobre la Calle Revolución, bautizada en honor a 1910. De aquella época tomamos lo mejor: la sobremesa larga, la vajilla fina y el gusto por recibir como se recibía entonces.",
+    en: "Our house sits on Revolución Street, named in honor of 1910. From that era we keep the best: long conversations at the table, fine china, and the art of hosting the way it was done back then.",
+  },
+  "era.caption":      { es: "México, 1911 · fotografía de época — dominio público", en: "Mexico, 1911 · period photograph — public domain" },
+
   "menu.title":       { es: "El menú", en: "The menu" },
+  "menu.card":        { es: "Menú", en: "Menu" },
   "menu.intro":       { es: "Precios en pesos mexicanos. Algunos sabores varían por temporada — pregunta por existencias.", en: "Prices in Mexican pesos. Some flavors vary by season — ask about availability." },
   "menu.tab.paninis": { es: "Paninis", en: "Paninis" },
   "menu.tab.drinks":  { es: "Bebidas", en: "Drinks" },
@@ -88,6 +96,8 @@ const I18N = {
   "footer.contactSub":{ es: "Reserva en línea", en: "Book online" },
   "footer.locationTitle": { es: "Ubicación", en: "Location" },
   "footer.love":      { es: "Hecho con cariño.", en: "Made with love." },
+  "footer.credit":    { es: "Fotografía histórica (México, 1911): dominio público, Wikimedia Commons.", en: "Historical photograph (Mexico, 1911): public domain, Wikimedia Commons." },
+  "aside.note":       { es: "Para grupos grandes, eventos o servicio de té completo, escríbenos por WhatsApp.", en: "For large groups, events or full tea service, message us on WhatsApp." },
 
   // Textos del menú generado por JS
   "m.paninis.note":   { es: "Todos incluyen guarnición de ensalada de papa y aderezo. Pan de masa madre, multigrano o finas hierbas (Amelie Panadería).", en: "All include a side of potato salad and dressing. Sourdough, multigrain or fine-herb bread (Amelie Bakery)." },
@@ -182,6 +192,7 @@ function itemRow(item) {
     : `<span class="menu__price">${precio(p)}${nota ? ` <small>· ${nota}</small>` : ""}</span>`;
   return `<li class="menu__item">
       <span class="menu__item-name">${nombre}</span>
+      <span class="menu__leader" aria-hidden="true"></span>
       ${precioHtml}
       ${desc ? `<span class="menu__item-desc">${desc}</span>` : ""}
     </li>`;
@@ -197,12 +208,13 @@ function renderMenu() {
   const paninis = `
     <div class="menu__panel" data-cat="paninis">
       <p class="menu__note">${t("m.paninis.note")}</p>
-      <ul class="menu__list">${MENU.paninis.map(itemRow).join("")}</ul>
+      <ul class="menu__list menu__list--cols">${MENU.paninis.map(itemRow).join("")}</ul>
     </div>`;
 
   const filasBebidas = BEBIDAS.map((b) => `
     <li class="menu__item menu__item--dual">
       <span class="menu__item-name">${tr(b.nombre)}</span>
+      <span class="menu__leader" aria-hidden="true"></span>
       <span class="menu__price">
         <span class="menu__price-tag">${precio(b.caliente)}<span>${t("m.hot")}</span></span>
         ${b.helado != null ? `<span class="menu__price-tag">${precio(b.helado)}<span>${t("m.iced")}</span></span>` : ""}
@@ -239,7 +251,7 @@ function renderMenu() {
 
   const postres = `
     <div class="menu__panel" data-cat="postres">
-      <ul class="menu__list">${MENU.postres.map(itemRow).join("")}</ul>
+      <ul class="menu__list menu__list--cols">${MENU.postres.map(itemRow).join("")}</ul>
     </div>`;
 
   const servicio = `
@@ -291,6 +303,10 @@ function renderGaleria() {
       <img src="${g.src}" alt="${tr(g.alt)}" loading="lazy"
            onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
       <div class="gallery__ph" style="display:none">✦ ${tr(g.etiqueta)}</div>
+      <figcaption class="gallery__caption">
+        <strong>${tr(g.etiqueta)}</strong>
+        <small>REVU 1910 · La Paz</small>
+      </figcaption>
     </figure>`).join("");
 }
 

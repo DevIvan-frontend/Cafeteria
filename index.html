@@ -4,15 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>REVU 1910 · Casa de Té y Café</title>
-  <meta name="description" content="REVU 1910 — Casa de té y café con encanto de principios del siglo XX. Paninis artesanales, cafés de especialidad, tés, postres caseros y servicio de té. Reserva por WhatsApp." />
+  <meta name="description" content="REVU 1910 — Casa de té y café con encanto de principios del siglo XX en La Paz, B.C.S. Paninis artesanales, cafés de especialidad, tés, postres caseros y servicio de té. Reserva por WhatsApp." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Pinyon+Script&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Ornamento de esquina reutilizable -->
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="corner-flourish" viewBox="0 0 44 44">
+      <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+        <path d="M2 42 V14 Q2 2 14 2 H42" />
+        <path d="M8 42 V16 Q8 8 16 8 H42" opacity=".55" stroke-width="1" />
+        <circle cx="14" cy="14" r="2.6" fill="currentColor" stroke="none" />
+        <path d="M22 2 q3 5 8 5 M2 22 q5 0 5 8" opacity=".8" stroke-width="1" />
+      </g>
+    </symbol>
+    <symbol id="rule-flourish" viewBox="0 0 240 18">
+      <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+        <path d="M4 9 H96 M144 9 H236" />
+        <path d="M120 3 l5 6 -5 6 -5 -6 z" fill="currentColor" stroke="none" />
+        <path d="M100 9 q8 -7 16 0 M124 9 q8 7 16 0" opacity=".8" />
+        <circle cx="98" cy="9" r="1.6" fill="currentColor" stroke="none" />
+        <circle cx="142" cy="9" r="1.6" fill="currentColor" stroke="none" />
+      </g>
+    </symbol>
+  </svg>
 
   <!-- ===== Barra de navegación ===== -->
   <header class="nav" id="inicio">
@@ -36,10 +57,17 @@
   <!-- ===== Hero ===== -->
   <section class="hero">
     <div class="hero__overlay"></div>
-    <div class="hero__content">
-      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café · est. 1910</p>
+    <div class="hero__frame">
+      <span class="corner corner--tl"><svg><use href="#corner-flourish"/></svg></span>
+      <span class="corner corner--tr"><svg><use href="#corner-flourish"/></svg></span>
+      <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
+      <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
+
+      <div class="hero__seal" aria-hidden="true">EST.<br />★ 1910 ★<br />LA PAZ</div>
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café</p>
       <h1 class="hero__title">REVU <span>1910</span></h1>
       <p class="hero__script" data-i18n="hero.script">Un rincón de otra época</p>
+      <svg class="flourish" width="220" height="18" aria-hidden="true"><use href="#rule-flourish"/></svg>
       <p class="hero__lead" data-i18n="hero.lead">
         Cafés de especialidad, tés selectos, paninis artesanales y postres caseros,
         servidos con el encanto de principios del siglo XX.
@@ -56,7 +84,7 @@
   <section class="section historia" id="historia">
     <div class="ornament" aria-hidden="true">❦</div>
     <h2 class="section__title" data-i18n="about.title">Nuestra casa</h2>
-    <p class="section__intro" data-i18n="about.intro">
+    <p class="section__intro dropcap" data-i18n="about.intro">
       Entre muros de ladrillo y herrería verdigris, REVU 1910 recupera la calidez
       de las antiguas casas de té. Cada taza se prepara con calma, cada postre se hornea
       en casa y cada visita es una pausa fuera del tiempo.
@@ -104,6 +132,21 @@
     </div>
   </section>
 
+  <!-- ===== Cinta histórica 1910 ===== -->
+  <section class="era" aria-label="1910">
+    <div class="era__inner">
+      <p class="era__numeral" aria-hidden="true">1910</p>
+      <h2 class="era__title" data-i18n="era.title">El año que nos da nombre</h2>
+      <p class="era__text" data-i18n="era.text">
+        Nuestra casa vive sobre la Calle Revolución, bautizada en honor a 1910.
+        De aquella época tomamos lo mejor: la sobremesa larga, la vajilla fina
+        y el gusto por recibir como se recibía entonces.
+      </p>
+      <svg class="flourish" width="220" height="18" aria-hidden="true"><use href="#rule-flourish"/></svg>
+      <p class="era__caption" data-i18n="era.caption">México, 1911 · fotografía de época — dominio público</p>
+    </div>
+  </section>
+
   <!-- ===== Menú ===== -->
   <section class="section menu" id="menu">
     <div class="ornament" aria-hidden="true">❦</div>
@@ -117,7 +160,14 @@
       <button class="menu__tab" data-cat="servicio" data-i18n="menu.tab.tea" role="tab">Servicio de té</button>
     </div>
 
-    <div class="menu__panels" id="menuPanels"><!-- render en app.js --></div>
+    <div class="menu__card">
+      <span class="menu__medallion" data-i18n="menu.card">Menú</span>
+      <span class="corner corner--tl"><svg><use href="#corner-flourish"/></svg></span>
+      <span class="corner corner--tr"><svg><use href="#corner-flourish"/></svg></span>
+      <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
+      <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
+      <div class="menu__panels" id="menuPanels"><!-- render en app.js --></div>
+    </div>
   </section>
 
   <!-- ===== Galería ===== -->
@@ -130,34 +180,54 @@
 
   <!-- ===== Reservar ===== -->
   <section class="section reservar" id="reservar">
-    <div class="reservar__card">
-      <div class="ornament ornament--light" aria-hidden="true">❦</div>
-      <h2 class="section__title" data-i18n="reserve.title">Reserva tu mesa</h2>
-      <p class="section__intro" data-i18n="reserve.intro">Completa los datos y te llevaremos a WhatsApp con tu mensaje ya listo para enviar.</p>
+    <div class="reservar__grid">
+      <div class="reservar__card">
+        <span class="corner corner--tl"><svg><use href="#corner-flourish"/></svg></span>
+        <span class="corner corner--tr"><svg><use href="#corner-flourish"/></svg></span>
+        <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
+        <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
+        <div class="ornament ornament--light" aria-hidden="true">❦</div>
+        <h2 class="section__title" data-i18n="reserve.title">Reserva tu mesa</h2>
+        <p class="section__intro" data-i18n="reserve.intro">Completa los datos y te llevaremos a WhatsApp con tu mensaje ya listo para enviar.</p>
 
-      <form class="form" id="reservaForm">
-        <div class="form__row">
-          <label><span data-i18n="form.name">Nombre</span>
-            <input type="text" name="nombre" required data-i18n-ph="form.namePh" placeholder="Tu nombre" />
+        <form class="form" id="reservaForm">
+          <div class="form__row">
+            <label><span data-i18n="form.name">Nombre</span>
+              <input type="text" name="nombre" required data-i18n-ph="form.namePh" placeholder="Tu nombre" />
+            </label>
+            <label><span data-i18n="form.people">Personas</span>
+              <input type="number" name="personas" min="1" value="2" required />
+            </label>
+          </div>
+          <div class="form__row">
+            <label><span data-i18n="form.date">Fecha</span>
+              <input type="date" name="fecha" required />
+            </label>
+            <label><span data-i18n="form.time">Hora</span>
+              <select name="hora" id="horaSelect" required><!-- opciones en app.js --></select>
+            </label>
+          </div>
+          <label><span data-i18n="form.notes">Notas</span> <span class="muted" data-i18n="form.optional">(opcional)</span>
+            <textarea name="notas" rows="2" data-i18n-ph="form.notesPh" placeholder="Cumpleaños, servicio de té, alergias…"></textarea>
           </label>
-          <label><span data-i18n="form.people">Personas</span>
-            <input type="number" name="personas" min="1" value="2" required />
-          </label>
+          <button class="btn btn--gold btn--block" type="submit" data-i18n="form.submit">Enviar por WhatsApp</button>
+          <p class="form__hint" id="waHint"></p>
+        </form>
+      </div>
+
+      <aside class="reservar__aside">
+        <div class="aside__seal" aria-hidden="true">REVU<br />1910</div>
+        <h3 data-i18n="footer.tag">Casa de té &amp; café</h3>
+        <div class="aside__block">
+          <h4 data-i18n="footer.hoursTitle">Horario</h4>
+          <p data-i18n-html="footer.hoursValue">Todos los días<br />16:00 – 22:00</p>
         </div>
-        <div class="form__row">
-          <label><span data-i18n="form.date">Fecha</span>
-            <input type="date" name="fecha" required />
-          </label>
-          <label><span data-i18n="form.time">Hora</span>
-            <select name="hora" id="horaSelect" required><!-- opciones en app.js --></select>
-          </label>
+        <div class="aside__block">
+          <h4 data-i18n="footer.locationTitle">Ubicación</h4>
+          <p>Calle Revolución #1445<br />Zona Central, La Paz, B.C.S.</p>
         </div>
-        <label><span data-i18n="form.notes">Notas</span> <span class="muted" data-i18n="form.optional">(opcional)</span>
-          <textarea name="notas" rows="2" data-i18n-ph="form.notesPh" placeholder="Cumpleaños, servicio de té, alergias…"></textarea>
-        </label>
-        <button class="btn btn--gold btn--block" type="submit" data-i18n="form.submit">Enviar por WhatsApp</button>
-        <p class="form__hint" id="waHint"></p>
-      </form>
+        <p class="aside__note" data-i18n="aside.note">Para grupos grandes, eventos o servicio de té completo, escríbenos por WhatsApp.</p>
+      </aside>
     </div>
   </section>
 
@@ -206,6 +276,7 @@
       </div>
     </div>
     <p class="footer__legal">© <span id="year"></span> REVU 1910 · Tea &amp; Coffee. <span data-i18n="footer.love">Hecho con cariño.</span></p>
+    <p class="footer__credit" data-i18n="footer.credit">Fotografía histórica (México, 1911): dominio público, Wikimedia Commons.</p>
   </footer>
 
   <a class="wa-float" id="waFloat" href="#reservar" aria-label="Reservar por WhatsApp">
