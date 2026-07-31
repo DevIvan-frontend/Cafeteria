@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devivan-frontend.github.io/Cafeteria/sitemap.xml
