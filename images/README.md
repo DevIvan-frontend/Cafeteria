@@ -1,40 +1,62 @@
 # Imágenes
 
-Guarda aquí las fotos del sitio con **exactamente** estos nombres. Se cargan
-automáticamente; si un archivo no existe, el sitio muestra un marcador elegante.
+Todas las fotos del sitio ya están optimizadas para web. Los **originales sin
+comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
+`.gitignore`) para no inflar el repositorio.
 
-## Fotos que ya elegimos (de las que enviaste)
+## Dónde aparece cada foto
 
-| Foto                                                   | Guárdala como                 | Se usa en           |
-|--------------------------------------------------------|-------------------------------|---------------------|
-| Capuchino en taza floral con canela                    | `especialidad-cafe.jpg`       | Div "Café" + galería |
-| Vista superior de 4 tazas (matcha y lattes) con flores | `especialidad-te.jpg`         | Div "Tés" + galería  |
-| Cheesecake de fresa con crema                          | `especialidad-postres.jpg`    | Div "Postres" + galería |
-| Panini con puré en plato de hiedra                     | `galeria-panini.jpg`          | Galería             |
-| Cupcake con corazón rojo                               | `galeria-cupcake.jpg`         | Galería             |
+### Encabezado
+| Archivo | Origen | Uso |
+|---|---|---|
+| `hero.jpg` | IMG_3427 | Fondo de la portada (estantería de tés) |
 
-## Generadas para el rediseño temático
+### "Nuestra casa" — los tres pilares
+| Archivo | Origen | Uso |
+|---|---|---|
+| `especialidad-cafe.jpg` | IMG_0998 | Café de especialidad |
+| `especialidad-te.jpg` | IMG_3006 | Tés del mundo (sirviendo de la tetera) |
+| `especialidad-postres.jpg` | IMG_2997 | Repostería artesanal (tartaletas) |
 
-| Archivo        | Uso                              | Origen |
-|----------------|----------------------------------|--------|
-| `hero.jpg`     | Fondo del encabezado (duotono)   | Derivada de `especialidad-te.jpg` (foto propia) |
-| `era-1910.jpg` | Cinta histórica "1910"           | Fotografía de 1911 (junta revolucionaria), dominio público — Wikimedia Commons, `Toma_de_Juarez_highres.jpg`, recortada y en duotono sepia |
+### Galería (14 fotos, en este orden)
+| Archivo | Origen | Etiqueta |
+|---|---|---|
+| `galeria-fachada.jpg` | IMG_0635 | La fachada |
+| `galeria-salon.jpg` | IMG_0745 | El salón |
+| `galeria-teteras.jpg` | IMG_5676 | Las teteras |
+| `galeria-charola.jpg` | IMG_2715 | Servicio de té |
+| `galeria-panini.jpg` | IMG_2922 | Paninis |
+| `galeria-macarons.jpg` | IMG_3013 | Macarrones |
+| `galeria-frappe.jpg` | IMG_3016 | Frappés |
+| `galeria-cheesecake.jpg` | — | Cheesecake |
+| `galeria-tarta.jpg` | IMG_2994 | Tartas |
+| `galeria-torre.jpg` | IMG_0746 | La torre |
+| `galeria-letrero.jpg` | IMG_5675 | El letrero |
+| `galeria-jardin.jpg` | IMG_6974 | El jardín |
+| `galeria-cupcake.jpg` | — | Repostería |
+| `galeria-macarons2.jpg` | 1FB6D4A5… | Para llevar |
+
+### Eventos
+| Archivo | Origen | Evento |
+|---|---|---|
+| `galeria-teteras.jpg` | IMG_5676 | Un verano en Brujas |
+| `evento-te.jpg` | IMG_3007 | Día Internacional del Té |
+| `evento-catas.jpg` | IMG_3012 | Catas mensuales |
+
+### Sin usar por ahora
+`evento-temporada.jpg` (IMG_3001) y `galeria-navidad.jpg` (IMG_9966) quedan
+listas por si quieren rotarlas en la galería o en un evento nuevo.
 
 ## Marca y SEO
+| Archivo | Uso |
+|---|---|
+| `logo-revu1910.png` | Logo tipo sello (512×512), para Google y datos estructurados |
+| `favicon-32.png` | Icono de la pestaña del navegador |
+| `favicon-180.png` | Icono al guardar el sitio en iPhone/iPad |
+| `og-revu1910.jpg` | Vista previa al compartir (1200×630), sobre la foto de la fachada |
 
-| Archivo                | Uso                                                   |
-|------------------------|-------------------------------------------------------|
-| `logo-revu1910.png`    | Logo tipo sello (512×512). Lo usa Google en resultados y datos estructurados |
-| `favicon-32.png`       | Icono de la pestaña del navegador                     |
-| `favicon-180.png`      | Icono al guardar el sitio en iPhone/iPad              |
-| `og-revu1910.jpg`      | Vista previa al compartir en WhatsApp, Facebook, etc. (1200×630) |
-
-> Estos cuatro se generan por código. Si en algún momento tienen el **logo oficial**
-> del negocio en alta resolución, reemplaza `logo-revu1910.png` por él (cuadrado,
-> mínimo 512×512, fondo claro o transparente) y regenera la imagen social.
-
-Consejos:
-- Usa formato `.jpg` y comprime las fotos antes de subirlas (cargan más rápido).
-- Fotos horizontales lucen mejor; el sitio las recorta al centro automáticamente.
-- Para cambiar nombres o agregar más fotos a la galería, edita el arreglo
-  `GALERIA` en `../app.js`.
+## Cómo agregar o cambiar fotos
+1. Copia el original a `images/originales/`.
+2. Genera la versión web (lado mayor ~1400 px, calidad 81, progresiva).
+3. Ajusta el arreglo `GALERIA` o `EVENTOS` en `../app.js`, o la ruta del `<img>`
+   correspondiente en `../index.html`.

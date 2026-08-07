@@ -7,8 +7,12 @@
   --espresso: #362219;
   --espresso-2: #4a3227;
   --noche: #201209;
-  --verdigris: #4f9d97;
-  --verdigris-dk: #37726d;
+  /* Verde tomado de la herrería y la cantería de la fachada */
+  --menta: #90ccc0;
+  --menta-cl: #a8e4d8;
+  --verdigris: #58ada4;
+  --verdigris-dk: #2f6f67;
+  --linea-menta: rgba(144, 204, 192, 0.55);
   --crema: #f6efe0;
   --crema-2: #e2d3b6;
   --papel: #e9dcc4;            /* fondo pergamino: hace resaltar las tarjetas claras */
@@ -45,8 +49,9 @@ body {
   background-color: var(--papel);
   background-image:
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"),
-    radial-gradient(circle at 10% 12%, rgba(79, 157, 151, 0.06), transparent 42%),
-    radial-gradient(circle at 90% 85%, rgba(179, 135, 58, 0.08), transparent 45%);
+    radial-gradient(circle at 8% 10%, rgba(144, 204, 192, 0.16), transparent 40%),
+    radial-gradient(circle at 92% 88%, rgba(144, 204, 192, 0.13), transparent 42%),
+    radial-gradient(circle at 50% 48%, rgba(179, 135, 58, 0.07), transparent 55%);
 }
 
 img { max-width: 100%; display: block; }
@@ -90,13 +95,13 @@ body::after { right: 10px; }
 .muted { color: var(--texto-3); }
 code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; font-size: .85em; }
 
-/* Ornamento tipográfico centrado (fleurón con líneas) */
+/* Ornamento tipográfico centrado (fleurón verde con filetes dorados) */
 .ornament {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: .9rem;
-  color: var(--oro);
+  color: var(--verdigris);
   font-size: 1.35rem;
   margin-bottom: .9rem;
 }
@@ -104,10 +109,10 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   content: "";
   height: 1px;
   width: min(120px, 18vw);
-  background: linear-gradient(90deg, transparent, var(--linea-oro));
+  background: linear-gradient(90deg, transparent, var(--linea-oro) 60%, var(--linea-menta));
 }
-.ornament::after { background: linear-gradient(270deg, transparent, var(--linea-oro)); }
-.ornament--light { color: var(--oro-cl); }
+.ornament::after { background: linear-gradient(270deg, transparent, var(--linea-oro) 60%, var(--linea-menta)); }
+.ornament--light { color: var(--menta); }
 
 .section {
   position: relative;
@@ -172,7 +177,7 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   background: rgba(238, 227, 205, 0.94);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--linea-oro);
-  box-shadow: 0 4px 0 -2px rgba(179,135,58,.22);
+  box-shadow: 0 4px 0 -2px rgba(144, 204, 192, .45);
 }
 .nav__inner {
   max-width: 1160px;
@@ -244,16 +249,17 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   color: var(--crema);
   overflow: hidden;
   padding: 4.5rem 1.25rem;
+  /* Foto a color real; sólo un velo NEUTRO para que el texto se lea */
   background:
-    linear-gradient(180deg, rgba(32,18,9,.55), rgba(32,18,9,.68) 55%, rgba(32,18,9,.85)),
+    linear-gradient(180deg, rgba(0,0,0,.34), rgba(0,0,0,.30) 55%, rgba(0,0,0,.46)),
     url("images/hero.jpg") center/cover no-repeat,
-    linear-gradient(135deg, #2f5b57 0%, #362219 60%, #1a0f08 100%);
+    #2f5b57;
 }
 .hero__overlay {
   position: absolute; inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse at center, transparent 45%, rgba(15, 8, 4, .55) 100%);
+    radial-gradient(ellipse at center, transparent 52%, rgba(0, 0, 0, .38) 100%);
 }
 
 /* Marco ornamental del hero */
@@ -262,9 +268,9 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   max-width: 880px;
   padding: clamp(2.4rem, 6vw, 4.5rem) clamp(1.4rem, 5vw, 4rem);
   border: 1px solid rgba(217, 178, 95, .65);
-  outline: 1px solid rgba(217, 178, 95, .28);
+  outline: 1px solid rgba(168, 228, 216, .4);
   outline-offset: 7px;
-  background: rgba(26, 15, 8, 0.38);
+  background: rgba(8, 26, 24, 0.4);
 }
 .corner {
   position: absolute;
@@ -285,7 +291,7 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   margin: 0 auto 1.2rem;
   border-radius: 50%;
   border: 1px solid rgba(217,178,95,.75);
-  box-shadow: inset 0 0 0 3px rgba(26,15,8,.6), inset 0 0 0 4px rgba(217,178,95,.5);
+  box-shadow: inset 0 0 0 3px rgba(8,26,24,.6), inset 0 0 0 4px rgba(168,228,216,.55);
   font-family: var(--grabado);
   font-size: .6rem;
   letter-spacing: .12em;
@@ -390,74 +396,9 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   display: block;
   width: 44px; height: 1px;
   margin: .5rem auto 0;
-  background: var(--oro);
+  background: var(--verdigris);
 }
 .pillar p { margin: .4rem 0 0; color: var(--texto-1); font-size: .99rem; }
-
-/* ================== Cinta histórica "1910" =================== */
-.era {
-  position: relative;
-  color: var(--crema);
-  text-align: center;
-  padding: clamp(4rem, 10vw, 7rem) 1.25rem;
-  background:
-    linear-gradient(180deg, rgba(32,18,9,.82), rgba(32,18,9,.72) 50%, rgba(32,18,9,.86)),
-    url("images/era-1910.jpg") center 30%/cover no-repeat;
-}
-@media (min-width: 900px) { .era { background-attachment: fixed, fixed; } }
-.era::before, .era::after {
-  content: "";
-  position: absolute; left: 0; right: 0;
-  height: 8px;
-  background:
-    repeating-linear-gradient(90deg, var(--oro) 0 14px, transparent 14px 22px);
-  opacity: .5;
-}
-.era::before { top: 0; }
-.era::after { bottom: 0; }
-.era__inner { max-width: 860px; margin: 0 auto; }
-.era__kicker {
-  font-family: var(--grabado);
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .4em;
-  text-transform: uppercase;
-  color: rgba(217, 178, 95, .9);
-  margin: 0 0 .4rem;
-}
-.era__numeral {
-  font-family: var(--display);
-  font-weight: 900;
-  font-size: clamp(4rem, 12vw, 8rem);
-  line-height: 1;
-  margin: 0;
-  color: var(--oro-cl);
-  background: linear-gradient(180deg, #f2dda2, var(--oro-cl) 45%, #a5762c);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 3px 12px rgba(0,0,0,.55));
-}
-.era__title {
-  font-family: var(--display);
-  font-size: clamp(1.5rem, 3.4vw, 2.2rem);
-  font-weight: 700;
-  margin: .6rem 0 1rem;
-  color: var(--crema);
-}
-.era__text {
-  font-size: 1.16rem;
-  color: rgba(246,239,224,.88);
-  max-width: 60ch;
-  margin: 0 auto 1.6rem;
-}
-.era__caption {
-  font-family: var(--grabado);
-  font-size: .66rem;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: rgba(217,178,95,.75);
-}
 
 /* ====================== Historia detallada ================== */
 /* ---- Carrusel de historia: 3 tarjetas, la central destacada ---- */
@@ -501,7 +442,7 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   opacity: 1;
   transform: scale(1);
   filter: none;
-  border-color: var(--oro);
+  border-color: var(--menta);
   box-shadow: 0 26px 54px -26px rgba(32, 18, 9, .7), 0 0 0 1px rgba(179, 135, 58, .25);
 }
 .story__card.is-center .story__num {
@@ -574,7 +515,7 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   min-width: 2.3rem;
   height: 2.3rem;
   padding: 0 .5rem;
-  background: var(--espresso);
+  background: var(--verdigris-dk);
   color: var(--oro-cl);
   font-family: var(--grabado);
   font-size: .82rem;
@@ -619,8 +560,8 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   width: 13px; height: 13px;
   border-radius: 50%;
   background: var(--tarjeta);
-  border: 2px solid var(--oro);
-  box-shadow: 0 0 0 3px rgba(179, 135, 58, .18);
+  border: 2px solid var(--verdigris);
+  box-shadow: 0 0 0 3px rgba(144, 204, 192, .3);
 }
 .tl__date {
   font-family: var(--grabado);
@@ -725,7 +666,7 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   letter-spacing: .34em;
   text-transform: uppercase;
   padding: .55rem 1.6rem .5rem 1.9rem;
-  border: 1px solid rgba(217,178,95,.55);
+  border: 1px solid rgba(144,204,192,.6);
   box-shadow: 0 6px 18px -8px rgba(32,18,9,.6);
 }
 
@@ -769,7 +710,7 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   content: "";
   height: 1px;
   width: min(90px, 12vw);
-  background: var(--linea-oro);
+  background: var(--linea-menta);
 }
 
 .menu__list {
@@ -1298,7 +1239,12 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
 }
 .gallery__item:nth-child(2n) { transform: rotate(1.2deg); }
 .gallery__item:nth-child(3n) { transform: rotate(-.6deg); }
-.gallery__item:hover { transform: rotate(0) scale(1.03); z-index: 2; }
+.gallery__item:hover {
+  transform: rotate(0) scale(1.03);
+  z-index: 2;
+  border-color: var(--menta);
+  box-shadow: 0 22px 46px -24px rgba(32, 18, 9, .6), 0 0 0 1px var(--linea-menta);
+}
 .gallery__btn {
   display: block;
   width: 100%;
@@ -1612,7 +1558,7 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   max-width: 980px;
   margin: 0 auto;
   border: 1px solid var(--linea-oro);
-  outline: 1px solid var(--linea);
+  outline: 1px solid var(--linea-menta);
   outline-offset: 6px;
   overflow: hidden;
   box-shadow: var(--sombra);
@@ -1640,8 +1586,10 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 7px;
-  background: repeating-linear-gradient(90deg, var(--oro) 0 14px, transparent 14px 22px);
-  opacity: .45;
+  background:
+    repeating-linear-gradient(90deg, var(--oro) 0 14px, transparent 14px 44px),
+    repeating-linear-gradient(90deg, transparent 0 22px, var(--menta) 22px 36px, transparent 36px 44px);
+  opacity: .5;
 }
 .footer__grid {
   max-width: 1080px;
@@ -1737,5 +1685,5 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
-  .era { background-attachment: scroll, scroll; }
+  .hero { background-attachment: scroll; }
 }

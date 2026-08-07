@@ -63,18 +63,10 @@ const I18N = {
   "pillar.dessert.text": { es: "Elaborada a diario con ingredientes frescos y productores de Baja California Sur.", en: "Made fresh daily with local ingredients from Baja California Sur growers." },
 
   /* ----- Historia ----- */
-  "era.kicker":       { es: "Nuestra historia", en: "Our story" },
-  "era.title":        { es: "Una historia que esperó generaciones", en: "A story that waited generations" },
-  "era.text":         {
-    es: "Al cruzar la puerta de REVU 1910 no solo se entra a una Casa de Té: se entra a una historia familiar. Abrimos el 6 de enero de 2023, tras más de tres años de preparación en plena incertidumbre de la pandemia, para rescatar la cultura del té y preservar parte del patrimonio cotidiano de La Paz.",
-    en: "Walking through the door of REVU 1910 is not just entering a Tea House: it is entering a family story. We opened on January 6, 2023, after more than three years of preparation amid the uncertainty of the pandemic, to revive tea culture and preserve part of La Paz's everyday heritage.",
-  },
-  "era.caption":      { es: "México, 1911 · fotografía de época — dominio público", en: "Mexico, 1911 · period photograph — public domain" },
-
   "story.title":      { es: "Cómo nació REVU 1910", en: "How REVU 1910 was born" },
   "story.intro":      {
-    es: "Un sueño familiar que recorrió tres continentes antes de volver a casa.",
-    en: "A family dream that travelled three continents before coming home.",
+    es: "Al cruzar nuestra puerta no sólo se entra a una Casa de Té: se entra a una historia familiar que esperó generaciones para ser contada.",
+    en: "Walking through our door is not just entering a Tea House: it is entering a family story that waited generations to be told.",
   },
   "story.family.title": { es: "Un sueño que nació en familia", en: "A dream born in family" },
   "story.family.text":  {
@@ -243,7 +235,6 @@ const I18N = {
   "footer.followTitle": { es: "Síguenos", en: "Follow us" },
   "footer.locationTitle": { es: "Ubicación", en: "Location" },
   "footer.love":      { es: "Hecho con cariño.", en: "Made with love." },
-  "footer.credit":    { es: "Fotografía histórica (México, 1911): dominio público, Wikimedia Commons.", en: "Historical photograph (Mexico, 1911): public domain, Wikimedia Commons." },
 };
 
 function t(key) {
@@ -668,9 +659,9 @@ function initStorySlider() {
 
 /* --------------------------- Eventos ----------------------------- */
 const EVENTOS = [
-  { key: "brujas", img: "images/especialidad-te.jpg" },
-  { key: "dia", img: "images/galeria-cupcake.jpg" },
-  { key: "cata", img: "images/especialidad-cafe.jpg" },
+  { key: "brujas", img: "images/galeria-teteras.jpg" },
+  { key: "dia", img: "images/evento-te.jpg" },
+  { key: "cata", img: "images/evento-catas.jpg" },
 ];
 
 function renderEventos() {
@@ -691,11 +682,20 @@ function renderEventos() {
 
 /* --------------------------- Galería ----------------------------- */
 const GALERIA = [
-  { src: "images/galeria-panini.jpg", alt: { es: "Panini artesanal con guarnición", en: "Artisan panini with side" }, etiqueta: { es: "Paninis", en: "Paninis" } },
-  { src: "images/especialidad-postres.jpg", alt: { es: "Cheesecake de fresa", en: "Strawberry cheesecake" }, etiqueta: { es: "Cheesecake", en: "Cheesecake" } },
+  { src: "images/galeria-fachada.jpg", alt: { es: "Fachada de REVU 1910 con su herrería verde y mesas en la banqueta", en: "REVU 1910 storefront with its green ironwork and sidewalk tables" }, etiqueta: { es: "La fachada", en: "The storefront" } },
+  { src: "images/galeria-salon.jpg", alt: { es: "Salón interior con muros de ladrillo y mobiliario antiguo", en: "Interior room with brick walls and antique furniture" }, etiqueta: { es: "El salón", en: "The parlour" } },
+  { src: "images/galeria-teteras.jpg", alt: { es: "Teteras de porcelana floral de la colección familiar", en: "Floral porcelain teapots from the family collection" }, etiqueta: { es: "Las teteras", en: "The teapots" } },
+  { src: "images/galeria-charola.jpg", alt: { es: "Charola de tres pisos con bocadillos dulces y salados", en: "Three-tier stand with sweet and savory bites" }, etiqueta: { es: "Servicio de té", en: "Tea service" } },
+  { src: "images/galeria-panini.jpg", alt: { es: "Panini artesanal recién prensado", en: "Freshly pressed artisan panini" }, etiqueta: { es: "Paninis", en: "Paninis" } },
+  { src: "images/galeria-macarons.jpg", alt: { es: "Macarrones de temporada sobre plato de porcelana", en: "Seasonal macarons on a porcelain plate" }, etiqueta: { es: "Macarrones", en: "Macarons" } },
+  { src: "images/galeria-frappe.jpg", alt: { es: "Frappé coronado con crema batida", en: "Frappé topped with whipped cream" }, etiqueta: { es: "Frappés", en: "Frappés" } },
+  { src: "images/galeria-cheesecake.jpg", alt: { es: "Cheesecake de fresa con crema", en: "Strawberry cheesecake with cream" }, etiqueta: { es: "Cheesecake", en: "Cheesecake" } },
+  { src: "images/galeria-tarta.jpg", alt: { es: "Tarta casera de temporada", en: "Homemade seasonal tart" }, etiqueta: { es: "Tartas", en: "Tarts" } },
+  { src: "images/galeria-torre.jpg", alt: { es: "Torre de bocadillos entre luces cálidas", en: "Tiered stand of bites among warm lights" }, etiqueta: { es: "La torre", en: "The tower" } },
+  { src: "images/galeria-letrero.jpg", alt: { es: "Letrero colgante Casa de Té y Café REVU 1910", en: "Hanging sign: REVU 1910 Tea & Coffee House" }, etiqueta: { es: "El letrero", en: "The sign" } },
+  { src: "images/galeria-jardin.jpg", alt: { es: "Escultura de tazas apiladas con el número 1910 en el jardín", en: "Stacked teacup sculpture with the number 1910 in the garden" }, etiqueta: { es: "El jardín", en: "The garden" } },
   { src: "images/galeria-cupcake.jpg", alt: { es: "Cupcake con detalle de corazón", en: "Cupcake with heart topper" }, etiqueta: { es: "Repostería", en: "Bakery" } },
-  { src: "images/especialidad-te.jpg", alt: { es: "Matcha y lattes en vajilla de época", en: "Matcha and lattes in vintage china" }, etiqueta: { es: "Tés & lattes", en: "Teas & lattes" } },
-  { src: "images/especialidad-cafe.jpg", alt: { es: "Capuchino en taza floral", en: "Cappuccino in floral cup" }, etiqueta: { es: "El café", en: "The coffee" } },
+  { src: "images/galeria-macarons2.jpg", alt: { es: "Estuche de macarrones de colores sobre mantel bordado", en: "Box of colorful macarons on an embroidered cloth" }, etiqueta: { es: "Para llevar", en: "To take away" } },
 ];
 
 function renderGaleria() {

@@ -4,3 +4,6 @@ node_modules/
 
 # Configuración local de Claude Code
 .claude/settings.local.json
+
+# Fotos originales sin optimizar (se conservan sólo en tu equipo)
+images/originales/
