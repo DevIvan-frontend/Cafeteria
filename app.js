@@ -44,8 +44,8 @@ const I18N = {
   "hero.eyebrow":     { es: "Casa de té & café · La Paz, B.C.S.", en: "Tea & coffee house · La Paz, B.C.S." },
   "hero.script":      { es: "Donde el tiempo vuelve a servir el té", en: "Where time pours tea once more" },
   "hero.lead":        {
-    es: "La primera Casa de Té de La Paz. Tés del mundo, cafés de especialidad, paninis artesanales y repostería hecha en casa, servidos entre piezas con casi un siglo de historia.",
-    en: "The first Tea House in La Paz. Teas from around the world, specialty coffee, artisan paninis and homemade pastries, served among pieces nearly a century old.",
+    es: "La primera Casa de Té de La Paz. Tés del mundo, café hecho con cariño, paninis artesanales y repostería hecha en casa, servidos entre piezas con casi un siglo de historia.",
+    en: "The first Tea House in La Paz. Teas from around the world, coffee made with care, artisan paninis and homemade pastries, served among pieces nearly a century old.",
   },
   "hero.cta1":        { es: "Reservar por WhatsApp", en: "Book on WhatsApp" },
   "hero.cta2":        { es: "Ver el menú", en: "See the menu" },
@@ -55,8 +55,8 @@ const I18N = {
     es: "Hay lugares que nacen para vender un producto y hay otros que nacen para conservar una historia. REVU 1910 pertenece a estos últimos: en el corazón del Centro Histórico de La Paz, a unos pasos de la Catedral y del malecón, cada taza se prepara con calma y cada rincón guarda un recuerdo.",
     en: "Some places are born to sell a product; others are born to keep a story alive. REVU 1910 belongs to the latter: in the heart of La Paz's historic downtown, steps from the Cathedral and the boardwalk, every cup is made unhurried and every corner holds a memory.",
   },
-  "pillar.coffee.title": { es: "Café de especialidad", en: "Specialty coffee" },
-  "pillar.coffee.text":  { es: "Espresso, latte, mocha y matcha preparados por baristas, calientes o helados.", en: "Espresso, latte, mocha and matcha prepared by baristas, hot or iced." },
+  "pillar.coffee.title": { es: "Café hecho con cariño", en: "Coffee made with care" },
+  "pillar.coffee.text":  { es: "Espresso, latte, mocha y chai preparados a mano, calientes o helados, para acompañar la sobremesa.", en: "Espresso, latte, mocha and chai made by hand, hot or iced, to go with a long conversation." },
   "pillar.tea.title":    { es: "Tés del mundo", en: "Teas of the world" },
   "pillar.tea.text":     { es: "Selección de China, Japón, India, Taiwán, Sri Lanka y Marruecos, servida en tetera.", en: "A selection from China, Japan, India, Taiwan, Sri Lanka and Morocco, served by the pot." },
   "pillar.dessert.title":{ es: "Repostería artesanal", en: "Artisan pastries" },
@@ -261,14 +261,14 @@ const MENU = {
     { nombre: "Cream Cheese & Red Berries", desc: { es: "Queso crema y mermelada de frutos rojos en pan sabor parmesano", en: "Cream cheese and red berry jam on parmesan bagel" }, precio: 145 },
   ],
   postres: [
-    { nombre: "Selva Negra", desc: { es: "Pastelillo de chocolate con licor de cereza", en: "Chocolate cake with cherry liqueur" }, precio: null },
+    { nombre: "Selva Negra", desc: { es: "Pastelillo de chocolate con licor de cereza", en: "Chocolate cake with cherry liqueur" }, precio: 115 },
     { nombre: { es: "Tarta casera", en: "Homemade tart" }, desc: { es: "Sabores de temporada", en: "Seasonal flavors" }, precio: 115 },
     { nombre: "Cheesecake", desc: { es: "Sabores de temporada", en: "Seasonal flavors" }, precio: 105 },
     { nombre: "Tiramisú", desc: "", precio: 90 },
     { nombre: "Brownie", desc: "", precio: 85 },
     { nombre: { es: "Croissant de almendra", en: "Almond croissant" }, desc: "", precio: 105 },
     { nombre: "Muffin", desc: { es: "Sabores de temporada", en: "Seasonal flavors" }, precio: 85 },
-    { nombre: { es: "Galletas", en: "Cookies" }, desc: { es: "Sabores de temporada", en: "Seasonal flavors" }, precio: null },
+    { nombre: { es: "Galletas", en: "Cookies" }, desc: { es: "Sabores de temporada", en: "Seasonal flavors" }, precio: 85 },
   ],
 };
 

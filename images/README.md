@@ -14,7 +14,7 @@ comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
 ### "Nuestra casa" — los tres pilares
 | Archivo | Origen | Uso |
 |---|---|---|
-| `especialidad-cafe.jpg` | IMG_0998 | Café de especialidad |
+| `especialidad-cafe.jpg` | IMG_0998 | Café hecho con cariño |
 | `especialidad-te.jpg` | IMG_3006 | Tés del mundo (sirviendo de la tetera) |
 | `especialidad-postres.jpg` | IMG_2997 | Repostería artesanal (tartaletas) |
 
