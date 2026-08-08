@@ -28,6 +28,7 @@ comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
 | `galeria-panini.jpg` | IMG_2922 | Paninis |
 | `galeria-macarons.jpg` | IMG_3013 | Macarrones |
 | `galeria-frappe.jpg` | IMG_3016 | Frappés |
+| `galeria-helado.jpg` | helado | Bola de nieve |
 | `galeria-cheesecake.jpg` | — | Cheesecake |
 | `galeria-tarta.jpg` | IMG_2994 | Tartas |
 | `galeria-torre.jpg` | IMG_0746 | La torre |

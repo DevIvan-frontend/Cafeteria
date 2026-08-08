@@ -405,7 +405,7 @@ function renderMenu() {
   const panels = $("#menuPanels");
   if (!panels) return;
 
-  const activeCat = $(".menu__tab.is-active")?.dataset.cat || "paninis";
+  const activeCat = $(".menu__tab.is-active")?.dataset.cat || "tes";
 
   /* --- Paninis & bagels --- */
   const paninis = `
@@ -572,11 +572,12 @@ function renderMenu() {
       </div>
     </div>`;
 
-  panels.innerHTML = paninis + bebidas + tes + postres + temporada + servicio + shatto;
+  // Los tés van primero: son el corazón de la casa.
+  panels.innerHTML = tes + paninis + bebidas + postres + temporada + servicio + shatto;
   // Mantiene la pestaña activa tras un cambio de idioma
   const hay = $$(".menu__panel").some((p) => p.dataset.cat === activeCat);
   $$(".menu__panel").forEach((p) =>
-    p.classList.toggle("is-active", p.dataset.cat === (hay ? activeCat : "paninis"))
+    p.classList.toggle("is-active", p.dataset.cat === (hay ? activeCat : "tes"))
   );
 }
 
@@ -689,6 +690,7 @@ const GALERIA = [
   { src: "images/galeria-panini.jpg", alt: { es: "Panini artesanal recién prensado", en: "Freshly pressed artisan panini" }, etiqueta: { es: "Paninis", en: "Paninis" } },
   { src: "images/galeria-macarons.jpg", alt: { es: "Macarrones de temporada sobre plato de porcelana", en: "Seasonal macarons on a porcelain plate" }, etiqueta: { es: "Macarrones", en: "Macarons" } },
   { src: "images/galeria-frappe.jpg", alt: { es: "Frappé coronado con crema batida", en: "Frappé topped with whipped cream" }, etiqueta: { es: "Frappés", en: "Frappés" } },
+  { src: "images/galeria-helado.jpg", alt: { es: "Bola de nieve servida en taza floral con cuchara de porcelana", en: "Scoop of ice cream served in a floral cup with a porcelain spoon" }, etiqueta: { es: "Bola de nieve", en: "Ice cream" } },
   { src: "images/galeria-cheesecake.jpg", alt: { es: "Cheesecake de fresa con crema", en: "Strawberry cheesecake with cream" }, etiqueta: { es: "Cheesecake", en: "Cheesecake" } },
   { src: "images/galeria-tarta.jpg", alt: { es: "Tarta casera de temporada", en: "Homemade seasonal tart" }, etiqueta: { es: "Tartas", en: "Tarts" } },
   { src: "images/galeria-torre.jpg", alt: { es: "Torre de bocadillos entre luces cálidas", en: "Tiered stand of bites among warm lights" }, etiqueta: { es: "La torre", en: "The tower" } },
