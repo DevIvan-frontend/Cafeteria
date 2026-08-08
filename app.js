@@ -690,7 +690,7 @@ const GALERIA = [
   { src: "images/galeria-panini.jpg", alt: { es: "Panini artesanal recién prensado", en: "Freshly pressed artisan panini" }, etiqueta: { es: "Paninis", en: "Paninis" } },
   { src: "images/galeria-macarons.jpg", alt: { es: "Macarrones de temporada sobre plato de porcelana", en: "Seasonal macarons on a porcelain plate" }, etiqueta: { es: "Macarrones", en: "Macarons" } },
   { src: "images/galeria-frappe.jpg", alt: { es: "Frappé coronado con crema batida", en: "Frappé topped with whipped cream" }, etiqueta: { es: "Frappés", en: "Frappés" } },
-  { src: "images/galeria-helado.jpg", alt: { es: "Bola de nieve servida en taza floral con cuchara de porcelana", en: "Scoop of ice cream served in a floral cup with a porcelain spoon" }, etiqueta: { es: "Bola de nieve", en: "Ice cream" } },
+  { src: "images/galeria-helado.jpg", alt: { es: "Ice Mess servido en taza floral con cuchara de porcelana", en: "Ice Mess served in a floral cup with a porcelain spoon" }, etiqueta: "Ice Mess" },
   { src: "images/galeria-cheesecake.jpg", alt: { es: "Cheesecake de fresa con crema", en: "Strawberry cheesecake with cream" }, etiqueta: { es: "Cheesecake", en: "Cheesecake" } },
   { src: "images/galeria-tarta.jpg", alt: { es: "Tarta casera de temporada", en: "Homemade seasonal tart" }, etiqueta: { es: "Tartas", en: "Tarts" } },
   { src: "images/galeria-torre.jpg", alt: { es: "Torre de bocadillos entre luces cálidas", en: "Tiered stand of bites among warm lights" }, etiqueta: { es: "La torre", en: "The tower" } },

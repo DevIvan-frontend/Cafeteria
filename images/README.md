@@ -28,7 +28,7 @@ comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
 | `galeria-panini.jpg` | IMG_2922 | Paninis |
 | `galeria-macarons.jpg` | IMG_3013 | Macarrones |
 | `galeria-frappe.jpg` | IMG_3016 | Frappés |
-| `galeria-helado.jpg` | helado | Bola de nieve |
+| `galeria-helado.jpg` | helado | Ice Mess |
 | `galeria-cheesecake.jpg` | — | Cheesecake |
 | `galeria-tarta.jpg` | IMG_2994 | Tartas |
 | `galeria-torre.jpg` | IMG_0746 | La torre |
@@ -51,7 +51,8 @@ listas por si quieren rotarlas en la galería o en un evento nuevo.
 ## Marca y SEO
 | Archivo | Uso |
 |---|---|
-| `logo-revu1910.png` | Logo tipo sello (512×512), para Google y datos estructurados |
+| `logo-marca.png` | **Emblema oficial** del negocio, en la portada |
+| `logo-revu1910.png` | Sello generado por código (512×512), para Google y datos estructurados |
 | `favicon-32.png` | Icono de la pestaña del navegador |
 | `favicon-180.png` | Icono al guardar el sitio en iPhone/iPad |
 | `og-revu1910.jpg` | Vista previa al compartir (1200×630), sobre la foto de la fachada |
