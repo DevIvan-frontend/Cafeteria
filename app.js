@@ -692,7 +692,7 @@ const GALERIA = [
   { src: "images/galeria-frappe.jpg", alt: { es: "Frappé coronado con crema batida", en: "Frappé topped with whipped cream" }, etiqueta: { es: "Frappés", en: "Frappés" } },
   { src: "images/galeria-helado.jpg", alt: { es: "Ice Mess servido en taza floral con cuchara de porcelana", en: "Ice Mess served in a floral cup with a porcelain spoon" }, etiqueta: "Ice Mess" },
   { src: "images/galeria-cheesecake.jpg", alt: { es: "Cheesecake de fresa con crema", en: "Strawberry cheesecake with cream" }, etiqueta: { es: "Cheesecake", en: "Cheesecake" } },
-  { src: "images/galeria-tarta.jpg", alt: { es: "Tarta casera de temporada", en: "Homemade seasonal tart" }, etiqueta: { es: "Tartas", en: "Tarts" } },
+  { src: "images/galeria-tarta.jpg", alt: { es: "Cheesecake de temporada con crema y coulis de calabaza", en: "Seasonal cheesecake with cream and pumpkin coulis" }, etiqueta: { es: "Cheesecake de temporada", en: "Seasonal cheesecake" } },
   { src: "images/galeria-torre.jpg", alt: { es: "Torre de bocadillos entre luces cálidas", en: "Tiered stand of bites among warm lights" }, etiqueta: { es: "La torre", en: "The tower" } },
   { src: "images/galeria-letrero.jpg", alt: { es: "Letrero colgante Casa de Té y Café REVU 1910", en: "Hanging sign: REVU 1910 Tea & Coffee House" }, etiqueta: { es: "El letrero", en: "The sign" } },
   { src: "images/galeria-jardin.jpg", alt: { es: "Escultura de tazas apiladas con el número 1910 en el jardín", en: "Stacked teacup sculpture with the number 1910 in the garden" }, etiqueta: { es: "El jardín", en: "The garden" } },

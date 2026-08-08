@@ -46,7 +46,7 @@
 
   <!-- ?v= sube de número en cada cambio de diseño para que el navegador
        no siga usando la hoja de estilos vieja que tenga guardada -->
-  <link rel="stylesheet" href="styles.css?v=2" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 
   <!-- ============ Datos estructurados para Google ============ -->
   <script type="application/ld+json">
@@ -216,8 +216,8 @@
       <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
       <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
 
-      <!-- ?v=2 obliga al navegador a descartar la versión con fondo blanco -->
-      <img class="hero__seal" src="images/logo-marca.png?v=2" width="300" height="300"
+      <!-- ?v=3 obliga al navegador a descartar la versión con fondo blanco -->
+      <img class="hero__seal" src="images/logo-marca.png?v=3" width="300" height="300"
            alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
       <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café · La Paz, B.C.S.</p>
       <h1 class="hero__title">REVU <span>1910</span></h1>
@@ -474,7 +474,8 @@
       </div>
 
       <aside class="reservar__aside">
-        <div class="aside__seal" aria-hidden="true">REVU<br />1910</div>
+        <img class="aside__seal" src="images/logo-marca.png?v=3" width="300" height="300"
+             alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
         <h3 data-i18n="footer.tag">Casa de té &amp; café</h3>
         <div class="aside__block">
           <h4 data-i18n="footer.hoursTitle">Horario</h4>
@@ -575,6 +576,6 @@
     <span data-i18n="nav.reserve">Reservar</span>
   </a>
 
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
