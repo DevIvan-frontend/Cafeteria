@@ -58,7 +58,7 @@ const I18N = {
   "pillar.coffee.title": { es: "Café hecho con cariño", en: "Coffee made with care" },
   "pillar.coffee.text":  { es: "Espresso, latte, mocha y chai preparados a mano, calientes o helados, para acompañar la sobremesa.", en: "Espresso, latte, mocha and chai made by hand, hot or iced, to go with a long conversation." },
   "pillar.tea.title":    { es: "Tés del mundo", en: "Teas of the world" },
-  "pillar.tea.text":     { es: "Selección de China, Japón, India, Taiwán, Sri Lanka y Marruecos, servida en tetera.", en: "A selection from China, Japan, India, Taiwan, Sri Lanka and Morocco, served by the pot." },
+  "pillar.tea.text":     { es: "Selección de China, Japón, India, Taiwán, Sri Lanka y Marruecos. Se sirve en tetera.", en: "A selection from China, Japan, India, Taiwan, Sri Lanka and Morocco. Served by the pot." },
   "pillar.dessert.title":{ es: "Repostería artesanal", en: "Artisan pastries" },
   "pillar.dessert.text": { es: "Elaborada a diario con ingredientes frescos y productores de Baja California Sur.", en: "Made fresh daily with local ingredients from Baja California Sur growers." },
 
