@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://devivan-frontend.github.io/Cafeteria/</loc>
+    <loc>https://revu1910.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://devivan-frontend.github.io/Cafeteria/images/og-revu1910.jpg</image:loc>
+      <image:loc>https://revu1910.com/images/og-revu1910.jpg</image:loc>
       <image:title>REVU 1910 · Casa de Té y Café, La Paz B.C.S.</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://devivan-frontend.github.io/Cafeteria/images/especialidad-te.jpg</image:loc>
+      <image:loc>https://revu1910.com/images/especialidad-te.jpg</image:loc>
       <image:title>Tés y matcha servidos en vajilla de época</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://devivan-frontend.github.io/Cafeteria/images/especialidad-postres.jpg</image:loc>
+      <image:loc>https://revu1910.com/images/especialidad-postres.jpg</image:loc>
       <image:title>Repostería artesanal de temporada</image:title>
     </image:image>
   </url>

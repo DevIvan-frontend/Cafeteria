@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devivan-frontend.github.io/Cafeteria/sitemap.xml
+Sitemap: https://revu1910.com/sitemap.xml
