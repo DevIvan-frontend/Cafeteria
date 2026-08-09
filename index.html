@@ -37,7 +37,7 @@
 
   <!-- ===================== Iconos ===================== -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="images/logo-revu1910.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +46,7 @@
 
   <!-- ?v= sube de número en cada cambio de diseño para que el navegador
        no siga usando la hoja de estilos vieja que tenga guardada -->
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=7" />
 
   <!-- ============ Datos estructurados para Google ============ -->
   <script type="application/ld+json">
@@ -61,7 +61,13 @@
         "description": "La primera Casa de Té establecida en La Paz, Baja California Sur. Tés del mundo servidos en tetera por una Sommelier de Té certificada, café hecho con cariño, paninis artesanales, bagels y repostería casera, en una casa del Centro Histórico decorada con piezas familiares de casi un siglo de antigüedad.",
         "slogan": "Donde el tiempo vuelve a servir el té",
         "url": "https://revu1910.com/",
-        "logo": "https://revu1910.com/images/logo-revu1910.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://revu1910.com/images/logo-google.png",
+          "width": 512,
+          "height": 512,
+          "caption": "Emblema de REVU 1910 · Casa de Té y Café"
+        },
         "image": [
           "https://revu1910.com/images/og-revu1910.jpg",
           "https://revu1910.com/images/especialidad-te.jpg",
@@ -217,8 +223,8 @@
       <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
       <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
 
-      <!-- ?v=6 obliga al navegador a descartar la versión con fondo blanco -->
-      <img class="hero__seal" src="images/logo-marca.png?v=6" width="300" height="300"
+      <!-- ?v=7 obliga al navegador a descartar la versión con fondo blanco -->
+      <img class="hero__seal" src="images/logo-marca.png?v=7" width="300" height="300"
            alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
       <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café</p>
       <h1 class="hero__title">REVU <span>1910</span></h1>
@@ -522,7 +528,7 @@
       </div>
 
       <aside class="reservar__aside">
-        <img class="aside__seal" src="images/logo-marca.png?v=6" width="300" height="300"
+        <img class="aside__seal" src="images/logo-marca.png?v=7" width="300" height="300"
              alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
         <h3 data-i18n="footer.tag">Casa de té &amp; café</h3>
         <div class="aside__block">
@@ -624,6 +630,6 @@
     <span data-i18n="nav.reserve">Reservar</span>
   </a>
 
-  <script src="app.js?v=6"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

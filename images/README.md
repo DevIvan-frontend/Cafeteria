@@ -58,7 +58,8 @@ listas por si quieren rotarlas en la galería o en un evento nuevo.
 | Archivo | Uso |
 |---|---|
 | `logo-marca.png` | **Emblema oficial** del negocio, en la portada |
-| `logo-revu1910.png` | Sello generado por código (512×512), para Google y datos estructurados |
+| `logo-google.png` | Emblema para los resultados de Google (512×512, fondo transparente) |
+| `icon-192.png` | Icono al guardar el sitio en Android |
 | `favicon-32.png` | Icono de la pestaña del navegador |
 | `favicon-180.png` | Icono al guardar el sitio en iPhone/iPad |
 | `og-revu1910.jpg` | Vista previa al compartir (1200×630), sobre la foto de la fachada |
