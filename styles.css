@@ -1119,6 +1119,96 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   margin: 0 0 1.6rem;
 }
 
+/* ========================= Boutique ========================= */
+.boutique__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.4rem);
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .boutique__grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Par de fotos superpuestas, como piezas sobre el mostrador */
+.boutique__media {
+  position: relative;
+  padding-bottom: clamp(3rem, 8vw, 5rem);
+}
+.boutique__photo {
+  margin: 0;
+  background: var(--tarjeta);
+  border: 1px solid var(--linea-oro);
+  outline: 1px solid var(--linea);
+  outline-offset: 4px;
+  padding: 10px;
+  box-shadow: var(--sombra);
+}
+.boutique__photo img { width: 100%; height: 100%; object-fit: cover; border: 1px solid var(--linea); }
+.boutique__photo--main {
+  width: min(78%, 380px);
+  aspect-ratio: 3 / 4;
+  transform: rotate(-1.4deg);
+}
+.boutique__photo--alt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(52%, 250px);
+  aspect-ratio: 4 / 3;
+  transform: rotate(2deg);
+  border-color: var(--linea-menta);
+}
+@media (max-width: 560px) {
+  .boutique__photo--main { width: 84%; }
+  .boutique__photo--alt { width: 54%; }
+}
+
+.boutique__kicker {
+  font-family: var(--grabado);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--verdigris-dk);
+  margin: 0 0 .4rem;
+}
+.boutique__title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.6vw, 2.3rem);
+  color: var(--espresso);
+  margin: 0 0 .9rem;
+}
+.boutique__text { margin: 0 0 1.4rem; color: var(--texto-1); }
+.boutique__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4rem;
+  display: grid;
+  gap: .6rem;
+}
+.boutique__list li {
+  position: relative;
+  padding-left: 1.7rem;
+  color: var(--texto-1);
+}
+.boutique__list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: -.05em;
+  color: var(--verdigris);
+}
+.boutique__note {
+  font-style: italic;
+  font-size: .97rem;
+  color: var(--texto-2);
+  border-left: 2px solid var(--linea-menta);
+  padding-left: .9rem;
+  margin: 0 0 1.7rem;
+}
+.boutique__actions { display: flex; gap: .8rem; flex-wrap: wrap; }
+
 /* ========================== Eventos ========================= */
 .event-next {
   position: relative;

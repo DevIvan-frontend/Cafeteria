@@ -46,7 +46,7 @@
 
   <!-- ?v= sube de número en cada cambio de diseño para que el navegador
        no siga usando la hoja de estilos vieja que tenga guardada -->
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 
   <!-- ============ Datos estructurados para Google ============ -->
   <script type="application/ld+json">
@@ -197,6 +197,7 @@
       <nav class="nav__links" aria-label="Navegación principal">
         <a href="#historia" data-i18n="nav.history">Historia</a>
         <a href="#menu" data-i18n="nav.menu">Menú</a>
+        <a href="#boutique" data-i18n="nav.shop">Boutique</a>
         <a href="#eventos" data-i18n="nav.events">Eventos</a>
         <a href="#galeria" data-i18n="nav.gallery">Galería</a>
         <a href="#visita" data-i18n="nav.visit">Visítanos</a>
@@ -216,15 +217,15 @@
       <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
       <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
 
-      <!-- ?v=4 obliga al navegador a descartar la versión con fondo blanco -->
-      <img class="hero__seal" src="images/logo-marca.png?v=4" width="300" height="300"
+      <!-- ?v=5 obliga al navegador a descartar la versión con fondo blanco -->
+      <img class="hero__seal" src="images/logo-marca.png?v=5" width="300" height="300"
            alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
-      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café · La Paz, B.C.S.</p>
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café</p>
       <h1 class="hero__title">REVU <span>1910</span></h1>
       <p class="hero__script" data-i18n="hero.script">Donde el tiempo vuelve a servir el té</p>
       <svg class="flourish" width="220" height="18" aria-hidden="true"><use href="#rule-flourish"/></svg>
       <p class="hero__lead" data-i18n="hero.lead">
-        La primera Casa de Té de La Paz. Tés del mundo, café hecho con cariño, paninis
+        La primera Casa de Té de La Paz, B.C.S. Tés del mundo, café hecho con cariño, paninis
         artesanales y repostería hecha en casa, servidos entre piezas con casi un siglo de historia.
       </p>
       <div class="hero__actions">
@@ -387,6 +388,53 @@
     </div>
   </section>
 
+  <!-- ===== Boutique ===== -->
+  <section class="section boutique" id="boutique">
+    <div class="ornament" aria-hidden="true">❦</div>
+    <h2 class="section__title" data-i18n="shop.title">La boutique</h2>
+    <p class="section__intro" data-i18n="shop.intro">
+      Llévate la casa contigo: en nuestra boutique encuentras todo lo necesario
+      para preparar el té como aquí.
+    </p>
+
+    <div class="boutique__grid">
+      <div class="boutique__media">
+        <figure class="boutique__photo boutique__photo--main">
+          <img src="images/boutique-utensilios.jpg" loading="lazy"
+               alt="Expositor con infusores, cucharillas y coladores de té etiquetados por REVU 1910" />
+        </figure>
+        <figure class="boutique__photo boutique__photo--alt">
+          <img src="images/boutique-tes.jpg" loading="lazy"
+               alt="Estantería con latas y cajas de té de la selección de REVU 1910" />
+        </figure>
+      </div>
+
+      <div class="boutique__body">
+        <p class="boutique__kicker" data-i18n="shop.kicker">En la casa</p>
+        <h3 class="boutique__title" data-i18n="shop.heading">Todo para tu ritual del té</h3>
+        <p class="boutique__text" data-i18n="shop.text">
+          Preparar una buena taza en casa es más sencillo de lo que parece: hace falta
+          una hoja bien elegida y unas cuantas piezas que hagan el trabajo. Eso es
+          justo lo que reunimos en nuestra boutique.
+        </p>
+        <ul class="boutique__list">
+          <li data-i18n="shop.item1">Tés de nuestra selección, para llevar a casa</li>
+          <li data-i18n="shop.item2">Infusores, cucharillas medidoras y coladores</li>
+          <li data-i18n="shop.item3">Piezas listas para regalar, con nuestra etiqueta</li>
+        </ul>
+        <p class="boutique__note" data-i18n="shop.note">
+          Las existencias cambian con la temporada. Pregúntanos qué tenemos disponible
+          o pásate a conocerlas.
+        </p>
+        <div class="boutique__actions">
+          <a class="btn btn--gold" id="shopLink" target="_blank" rel="noopener" href="#reservar"
+             data-i18n="shop.cta">Preguntar por WhatsApp</a>
+          <a class="btn btn--ghost" href="#visita" data-i18n="shop.cta2">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Eventos ===== -->
   <section class="section eventos" id="eventos">
     <div class="ornament" aria-hidden="true">❦</div>
@@ -474,7 +522,7 @@
       </div>
 
       <aside class="reservar__aside">
-        <img class="aside__seal" src="images/logo-marca.png?v=4" width="300" height="300"
+        <img class="aside__seal" src="images/logo-marca.png?v=5" width="300" height="300"
              alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
         <h3 data-i18n="footer.tag">Casa de té &amp; café</h3>
         <div class="aside__block">
@@ -576,6 +624,6 @@
     <span data-i18n="nav.reserve">Reservar</span>
   </a>
 
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>

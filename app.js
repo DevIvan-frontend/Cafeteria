@@ -36,16 +36,17 @@ const I18N = {
   "nav.about":        { es: "Nosotros", en: "About" },
   "nav.history":      { es: "Historia", en: "Our story" },
   "nav.menu":         { es: "Menú", en: "Menu" },
+  "nav.shop":         { es: "Boutique", en: "Shop" },
   "nav.events":       { es: "Eventos", en: "Events" },
   "nav.gallery":      { es: "Galería", en: "Gallery" },
   "nav.visit":        { es: "Visítanos", en: "Visit" },
   "nav.reserve":      { es: "Reservar", en: "Reserve" },
 
-  "hero.eyebrow":     { es: "Casa de té & café · La Paz, B.C.S.", en: "Tea & coffee house · La Paz, B.C.S." },
+  "hero.eyebrow":     { es: "Casa de té & café", en: "Tea & coffee house" },
   "hero.script":      { es: "Donde el tiempo vuelve a servir el té", en: "Where time pours tea once more" },
   "hero.lead":        {
-    es: "La primera Casa de Té de La Paz. Tés del mundo, café hecho con cariño, paninis artesanales y repostería hecha en casa, servidos entre piezas con casi un siglo de historia.",
-    en: "The first Tea House in La Paz. Teas from around the world, coffee made with care, artisan paninis and homemade pastries, served among pieces nearly a century old.",
+    es: "La primera Casa de Té de La Paz, B.C.S. Tés del mundo, café hecho con cariño, paninis artesanales y repostería hecha en casa, servidos entre piezas con casi un siglo de historia.",
+    en: "The first Tea House in La Paz, B.C.S. Teas from around the world, coffee made with care, artisan paninis and homemade pastries, served among pieces nearly a century old.",
   },
   "hero.cta1":        { es: "Reservar por WhatsApp", en: "Book on WhatsApp" },
   "hero.cta2":        { es: "Ver el menú", en: "See the menu" },
@@ -178,6 +179,28 @@ const I18N = {
   "m.shatto.inc6":    { es: "Para 6 personas: botanero", en: "For 6 guests: sharing platter" },
   "m.shatto.note":    { es: "El servicio a la carta está sujeto a consumo mínimo.", en: "À la carte service is subject to a minimum spend." },
   "m.shatto.cta":     { es: "Reservar el salón", en: "Book the room" },
+
+  /* ----- Boutique ----- */
+  "shop.title":       { es: "La boutique", en: "The shop" },
+  "shop.intro":       {
+    es: "Llévate la casa contigo: en nuestra boutique encuentras todo lo necesario para preparar el té como aquí.",
+    en: "Take the house home with you: our shop has everything you need to brew tea the way we do.",
+  },
+  "shop.kicker":      { es: "En la casa", en: "In the house" },
+  "shop.heading":     { es: "Todo para tu ritual del té", en: "Everything for your tea ritual" },
+  "shop.text":        {
+    es: "Preparar una buena taza en casa es más sencillo de lo que parece: hace falta una hoja bien elegida y unas cuantas piezas que hagan el trabajo. Eso es justo lo que reunimos en nuestra boutique.",
+    en: "Brewing a good cup at home is simpler than it seems: a well-chosen leaf and a few pieces that do the work. That is exactly what we have gathered in our shop.",
+  },
+  "shop.item1":       { es: "Tés de nuestra selección, para llevar a casa", en: "Teas from our selection, to take home" },
+  "shop.item2":       { es: "Infusores, cucharillas medidoras y coladores", en: "Infusers, measuring spoons and strainers" },
+  "shop.item3":       { es: "Piezas listas para regalar, con nuestra etiqueta", en: "Gift-ready pieces, with our own label" },
+  "shop.note":        {
+    es: "Las existencias cambian con la temporada. Pregúntanos qué tenemos disponible o pásate a conocerlas.",
+    en: "Stock changes with the season. Ask us what's available or come by and see for yourself.",
+  },
+  "shop.cta":         { es: "Preguntar por WhatsApp", en: "Ask on WhatsApp" },
+  "shop.cta2":        { es: "Cómo llegar", en: "Find us" },
 
   /* ----- Eventos ----- */
   "events.title":     { es: "Talleres & catas", en: "Workshops & tastings" },
@@ -826,6 +849,7 @@ function whatsappTexts() {
         name: "Nombre", people: "Personas", date: "Fecha", time: "Hora", notes: "Notas",
         opening: "Abriendo WhatsApp… si no abre, revisa tu bloqueador de ventanas.",
         events: `¡Hola ${CONFIG.nombreNegocio}! Me gustaría que me avisen del próximo taller o cata de té.`,
+        shop: `¡Hola ${CONFIG.nombreNegocio}! Quisiera saber qué tienen disponible en la boutique.`,
       }
     : {
         chat: `Hi ${CONFIG.nombreNegocio}! I'd like more info / to book a table.`,
@@ -833,6 +857,7 @@ function whatsappTexts() {
         name: "Name", people: "Guests", date: "Date", time: "Time", notes: "Notes",
         opening: "Opening WhatsApp… if it doesn't open, check your pop-up blocker.",
         events: `Hi ${CONFIG.nombreNegocio}! I'd like to be notified about the next tea workshop or tasting.`,
+        shop: `Hi ${CONFIG.nombreNegocio}! I'd like to know what you have available in the shop.`,
       };
 }
 
@@ -843,6 +868,8 @@ function refreshWaLinks() {
   $("#waFloat") && ($("#waFloat").href = chatUrl);
   const ev = $("#eventNotify");
   if (ev) ev.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(w.events)}`;
+  const shop = $("#shopLink");
+  if (shop) shop.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(w.shop)}`;
 }
 
 /** true si la fecha (YYYY-MM-DD) cae en un día sin servicio. */

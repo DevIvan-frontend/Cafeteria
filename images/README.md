@@ -37,6 +37,12 @@ comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
 | `galeria-cupcake.jpg` | — | Repostería |
 | `galeria-macarons2.jpg` | 1FB6D4A5… | Para llevar |
 
+### Boutique
+| Archivo | Origen | Uso |
+|---|---|---|
+| `boutique-utensilios.jpg` | utencilios para té | Foto principal (expositor de accesorios) |
+| `boutique-tes.jpg` | recorte de `hero.jpg` | Foto secundaria (estantería de tés) |
+
 ### Eventos
 | Archivo | Origen | Evento |
 |---|---|---|
