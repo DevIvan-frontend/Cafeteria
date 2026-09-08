@@ -127,7 +127,9 @@ const I18N = {
   "m.group.other":    { es: "Otras bebidas", en: "Other drinks" },
   "m.group.season":   { es: "Por tiempo limitado", en: "For a limited time" },
   "m.season.title":   { es: "Bebidas & postres de temporada", en: "Seasonal drinks & desserts" },
-  "m.season.text":    { es: "Creaciones que preparamos sólo mientras dura la temporada, con fruta fresca y tés de nuestra selección.", en: "Creations we make only while the season lasts, with fresh fruit and teas from our selection." },
+  "m.season.text":    { es: "Llegó el otoño y con él la calabaza: especias, nuez y canela en bebidas y postres que preparamos sólo mientras dura la temporada.", en: "Autumn is here, and so is pumpkin: spice, walnut and cinnamon in drinks and desserts we make only while the season lasts." },
+  "m.season.drinks":  { es: "Bebidas", en: "Drinks" },
+  "m.season.desserts":{ es: "Postres", en: "Desserts" },
   "story.prev":       { es: "Capítulo anterior", en: "Previous chapter" },
   "story.next":       { es: "Capítulo siguiente", en: "Next chapter" },
   "story.goto":       { es: "Ir al capítulo", en: "Go to chapter" },
@@ -206,6 +208,16 @@ const I18N = {
   "events.title":     { es: "Talleres & catas", en: "Workshops & tastings" },
   "events.intro":     { es: "Cada cierto tiempo abrimos la casa para catas, talleres y experiencias sensoriales alrededor del té y el café.", en: "Every so often we open the house for tastings, workshops and sensory experiences around tea and coffee." },
   "events.upcoming":  { es: "Próximo evento", en: "Next event" },
+  "events.poster":    { es: "Ver el cartel completo", en: "See the full poster" },
+  "ev.next.title":    { es: "Tres Colores · México en una taza", en: "Tres Colores · Mexico in a cup" },
+  "ev.next.text":     { es: "Una experiencia sensorial donde los sabores, aromas y colores de México se unen en una taza de té.", en: "A sensory experience where the flavors, aromas and colors of Mexico come together in a cup of tea." },
+  "ev.next.dateLabel":{ es: "Fecha", en: "Date" },
+  "ev.next.date":     { es: "Martes 22 de septiembre de 2026", en: "Tuesday, September 22, 2026" },
+  "ev.next.timeLabel":{ es: "Hora", en: "Time" },
+  "ev.next.priceLabel":{ es: "Costo", en: "Price" },
+  "ev.next.price":    { es: "$400 por persona", en: "$400 per person" },
+  "ev.next.cta":      { es: "Apartar mi lugar", en: "Reserve my spot" },
+  "ev.next.limited":  { es: "Cupo limitado · previa reservación", en: "Limited seats · by reservation" },
   "events.none":      { es: "No hay fechas publicadas por ahora", en: "No dates published right now" },
   "events.noneText":  { es: "Estamos preparando la siguiente experiencia. Síguenos en Instagram o Facebook, o escríbenos por WhatsApp para avisarte en cuanto abramos lugares.", en: "We're preparing the next experience. Follow us on Instagram or Facebook, or message us on WhatsApp and we'll let you know as soon as spots open." },
   "events.notify":    { es: "Avísenme del próximo", en: "Notify me of the next one" },
@@ -253,6 +265,8 @@ const I18N = {
   "footer.hoursTitle":{ es: "Horario", en: "Hours" },
   "footer.hoursValue":{ es: "Lunes a sábado<br />16:00 – 22:00", en: "Monday to Saturday<br />4:00 – 10:00 PM" },
   "footer.closed":    { es: "Domingo: cerrado", en: "Sunday: closed" },
+  "footer.backTitle": { es: "¡Ya estamos de vuelta!", en: "We're back!" },
+  "footer.backText":  { es: "A partir del 7 de septiembre retomamos nuestro horario de siempre.", en: "As of September 7 we are back to our regular hours." },
   "form.sundayClosed":{ es: "Los domingos permanecemos cerrados. Elige otro día, por favor.", en: "We are closed on Sundays. Please choose another day." },
   "footer.contactTitle": { es: "Contacto", en: "Contact" },
   "footer.followTitle": { es: "Síguenos", en: "Follow us" },
@@ -370,14 +384,22 @@ const TES = [
 ];
 
 /* Bebidas y postres de temporada (por tiempo limitado) */
-const TEMPORADA = [
-  { nombre: { es: "Frappé Cereza · Coco", en: "Cherry · Coconut frappé" }, desc: { es: "Mezcla de cereza natural y leche de coco", en: "Natural cherry blended with coconut milk" }, precio: 140 },
-  { nombre: { es: "Smoothie de mango", en: "Mango smoothie" }, desc: { es: "Pulpa de mango natural", en: "Natural mango pulp" }, precio: 135 },
-  { nombre: "Afogato · Matcha", desc: { es: "Bola de nieve de coco con un shot de matcha", en: "Coconut ice cream with a shot of matcha" }, precio: 135 },
-  { nombre: "Soda Tea", desc: { es: "Infusión de té a elegir con agua mineral y jarabe", en: "Your choice of tea infusion with sparkling water and syrup" }, precio: 105 },
-  { nombre: "Cold Brew Tea", desc: { es: "Pregunte por el té del día", en: "Ask for today's tea" }, precio: 90 },
-  { nombre: "Ice Mess", desc: { es: "Brownie servido con nieve de vainilla", en: "Brownie served with vanilla ice cream" }, precio: 110 },
-];
+const TEMPORADA = {
+  bebidas: [
+    { nombre: "Chai Pumpkin", desc: { es: "Mezcla de especias de la India con un toque de sabor a calabaza. Base té negro o té verde", en: "A blend of Indian spices with a touch of pumpkin. Black or green tea base" }, precio: 125 },
+    { nombre: { es: "Frappé de Calabaza", en: "Pumpkin Frappé" }, desc: { es: "Puré de calabaza natural con notas de nuez y canela", en: "Natural pumpkin purée with notes of walnut and cinnamon" }, precio: 150 },
+    { nombre: "Pumpkin Latte", desc: { es: "Combinación de café, dulzura de calabaza con especias y leche", en: "Coffee, sweet spiced pumpkin and milk" }, precio: 105 },
+    { nombre: "Pumpkin Chai Frappe", desc: { es: "Combinación de calabaza con el picante suave del chai", en: "Pumpkin with the gentle heat of chai" }, precio: 140 },
+    { nombre: "Spooky Matcha Latte", desc: { es: "Bebida helada con mermelada de blueberry, matcha y leche", en: "Iced drink with blueberry jam, matcha and milk" }, precio: 135 },
+  ],
+  postres: [
+    { nombre: { es: "Muffin de calabaza", en: "Pumpkin muffin" }, desc: "", precio: 75 },
+    { nombre: { es: "Muffin de calabaza relleno de cheesecake", en: "Pumpkin muffin filled with cheesecake" }, desc: "", precio: 105 },
+    { nombre: { es: "Tarta de calabaza", en: "Pumpkin pie" }, desc: "", precio: 115 },
+    { nombre: { es: "Cheesecake de calabaza", en: "Pumpkin cheesecake" }, desc: "", precio: 95 },
+    { nombre: { es: "Cheesecake de dátil", en: "Date cheesecake" }, desc: "", precio: 95 },
+  ],
+};
 
 /* Grace's Afternoon Tea */
 const GRACE = {
@@ -522,18 +544,25 @@ function renderMenu() {
       </div>
     </div>`;
 
-  /* --- Temporada (carta con identidad propia) --- */
+  /* --- Temporada (carta de otoño, con identidad propia) --- */
   const temporada = `
     <div class="menu__panel" data-cat="temporada">
       <div class="season">
-        <span class="season__leaf season__leaf--tl" aria-hidden="true"><svg viewBox="0 0 140 140"><use href="#branch-citrus"/></svg></span>
-        <span class="season__leaf season__leaf--br" aria-hidden="true"><svg viewBox="0 0 140 140"><use href="#branch-citrus"/></svg></span>
+        <span class="season__leaf season__leaf--tl" aria-hidden="true"><svg viewBox="0 0 140 140"><use href="#branch-autumn"/></svg></span>
+        <span class="season__leaf season__leaf--br" aria-hidden="true"><svg viewBox="0 0 140 140"><use href="#branch-autumn"/></svg></span>
         <div class="season__head">
           <p class="season__badge">${t("m.group.season")}</p>
           <h3 class="season__title">${t("m.season.title")}</h3>
           <p class="season__note">${t("m.season.text")}</p>
         </div>
-        <ul class="menu__list menu__list--cols">${TEMPORADA.map(itemRow).join("")}</ul>
+        <div class="menu__group">
+          <h3 class="menu__group-title">${t("m.season.drinks")}</h3>
+          <ul class="menu__list menu__list--cols">${TEMPORADA.bebidas.map(itemRow).join("")}</ul>
+        </div>
+        <div class="menu__group">
+          <h3 class="menu__group-title">${t("m.season.desserts")}</h3>
+          <ul class="menu__list menu__list--cols">${TEMPORADA.postres.map(itemRow).join("")}</ul>
+        </div>
         <p class="season__foot">${t("m.seasonalNote")}</p>
       </div>
     </div>`;
@@ -848,7 +877,7 @@ function whatsappTexts() {
         greet: `¡Hola ${CONFIG.nombreNegocio}! Quiero reservar una mesa 🫖`,
         name: "Nombre", people: "Personas", date: "Fecha", time: "Hora", notes: "Notas",
         opening: "Abriendo WhatsApp… si no abre, revisa tu bloqueador de ventanas.",
-        events: `¡Hola ${CONFIG.nombreNegocio}! Me gustaría que me avisen del próximo taller o cata de té.`,
+        events: `¡Hola ${CONFIG.nombreNegocio}! Quiero apartar mi lugar para la cata "Tres Colores" del martes 22 de septiembre a las 5:00 PM.`,
         shop: `¡Hola ${CONFIG.nombreNegocio}! Quisiera saber qué tienen disponible en la boutique.`,
       }
     : {
@@ -856,7 +885,7 @@ function whatsappTexts() {
         greet: `Hi ${CONFIG.nombreNegocio}! I'd like to book a table 🫖`,
         name: "Name", people: "Guests", date: "Date", time: "Time", notes: "Notes",
         opening: "Opening WhatsApp… if it doesn't open, check your pop-up blocker.",
-        events: `Hi ${CONFIG.nombreNegocio}! I'd like to be notified about the next tea workshop or tasting.`,
+        events: `Hi ${CONFIG.nombreNegocio}! I'd like to reserve a spot for the "Tres Colores" tasting on Tuesday, September 22 at 5:00 PM.`,
         shop: `Hi ${CONFIG.nombreNegocio}! I'd like to know what you have available in the shop.`,
       };
 }

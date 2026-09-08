@@ -46,6 +46,7 @@ comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
 ### Eventos
 | Archivo | Origen | Evento |
 |---|---|---|
+| `evento-cata-tres-colores.jpg` | INVITACION CATA | **Próximo:** cata Tres Colores (22 sep 2026) |
 | `galeria-teteras.jpg` | IMG_5676 | Un verano en Brujas |
 | `evento-te.jpg` | IMG_3007 | Día Internacional del Té |
 | `evento-catas.jpg` | IMG_3012 | Catas mensuales |

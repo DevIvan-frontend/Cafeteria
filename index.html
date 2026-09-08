@@ -47,7 +47,7 @@
 
   <!-- ?v= sube de número en cada cambio de diseño para que el navegador
        no siga usando la hoja de estilos vieja que tenga guardada -->
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=9" />
 
   <!-- ============ Datos estructurados para Google ============ -->
   <script type="application/ld+json">
@@ -120,6 +120,27 @@
         ]
       },
       {
+        "@type": "Event",
+        "@id": "https://revu1910.com/#cata-tres-colores",
+        "name": "Cata Tres Colores · México en una taza",
+        "description": "Una experiencia sensorial donde los sabores, aromas y colores de México se unen en una taza de té, guiada por nuestra Sommelier de Té certificada.",
+        "image": "https://revu1910.com/images/evento-cata-tres-colores.jpg",
+        "startDate": "2026-09-22T17:00:00-07:00",
+        "endDate": "2026-09-22T19:00:00-07:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": { "@id": "https://revu1910.com/#business" },
+        "organizer": { "@id": "https://revu1910.com/#business" },
+        "offers": {
+          "@type": "Offer",
+          "price": "400",
+          "priceCurrency": "MXN",
+          "availability": "https://schema.org/InStock",
+          "url": "https://revu1910.com/#eventos",
+          "validFrom": "2026-09-07T00:00:00-07:00"
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": "https://revu1910.com/#website",
         "url": "https://revu1910.com/",
@@ -152,25 +173,26 @@
         <circle cx="142" cy="9" r="1.6" fill="currentColor" stroke="none" />
       </g>
     </symbol>
-    <!-- Rama con cítricos para la carta de temporada -->
-    <symbol id="branch-citrus" viewBox="0 0 140 140">
+    <!-- Rama de otoño para la carta de temporada -->
+    <symbol id="branch-autumn" viewBox="0 0 140 140">
       <g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
-        <path d="M6 10 C 44 26, 74 54, 96 104" />
-        <path d="M30 76 C 46 68, 62 74, 72 88" opacity=".7" />
-        <path d="M60 26 C 78 24, 94 32, 102 46" opacity=".7" />
+        <path d="M4 8 C 42 24, 72 52, 98 108" />
+        <path d="M34 62 C 50 56, 64 60, 74 72" opacity=".7" />
+        <path d="M58 24 C 76 22, 92 30, 100 44" opacity=".7" />
       </g>
-      <g fill="currentColor" fill-opacity=".28" stroke="currentColor" stroke-width="1.6">
-        <path d="M22 20 c 12 -14, 30 -12, 38 2 c -14 12, -31 10, -38 -2 z" />
-        <path d="M46 52 c 14 -12, 31 -8, 37 6 c -15 10, -30 6, -37 -6 z" />
-        <path d="M30 76 c -14 4, -22 18, -17 32 c 15 -2, 24 -14, 17 -32 z" />
-        <path d="M78 92 c 14 -2, 26 8, 26 22 c -15 3, -27 -6, -26 -22 z" />
+      <!-- Hojas de arce -->
+      <g fill="#c8622a" fill-opacity=".55" stroke="currentColor" stroke-width="1.4">
+        <path d="M30 18 l6 -9 4 8 9 -5 -3 9 10 1 -7 7 8 6 -10 2 2 9 -9 -4 -3 9 -6 -8 -7 7 0 -10 -10 1 6 -8 -8 -5 9 -3 z" />
+        <path d="M92 54 l5 -8 4 7 8 -4 -3 8 9 1 -6 6 7 6 -9 1 2 8 -8 -3 -3 8 -5 -7 -6 6 0 -9 -9 1 5 -7 -7 -5 8 -2 z" />
       </g>
-      <g stroke="currentColor" stroke-width="1.6" fill="#e2a24a" fill-opacity=".55">
-        <circle cx="104" cy="52" r="12" />
-        <circle cx="70" cy="112" r="10" />
+      <g fill="#d98b2b" fill-opacity=".5" stroke="currentColor" stroke-width="1.3">
+        <path d="M26 84 l5 -8 4 7 8 -4 -3 8 9 1 -6 6 7 6 -9 1 2 8 -8 -3 -3 8 -5 -7 -6 6 0 -9 -9 1 5 -7 -7 -5 8 -2 z" />
       </g>
-      <g fill="none" stroke="currentColor" stroke-width="1.4" opacity=".8">
-        <path d="M104 40 v-6 M70 102 v-5" />
+      <!-- Bellota -->
+      <g stroke="currentColor" stroke-width="1.5">
+        <path d="M62 108 q10 -3 20 0 q-2 8 -10 9 q-8 -1 -10 -9 z" fill="#a5622c" fill-opacity=".6" />
+        <path d="M60 106 q12 -6 24 0 q-12 4 -24 0 z" fill="currentColor" fill-opacity=".35" />
+        <path d="M72 100 v-5" fill="none" />
       </g>
     </symbol>
     <symbol id="ico-instagram" viewBox="0 0 24 24">
@@ -224,8 +246,8 @@
       <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
       <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
 
-      <!-- ?v=8 obliga al navegador a descartar la versión con fondo blanco -->
-      <img class="hero__seal" src="images/logo-marca.png?v=8" width="300" height="300"
+      <!-- ?v=9 obliga al navegador a descartar la versión con fondo blanco -->
+      <img class="hero__seal" src="images/logo-marca.png?v=9" width="300" height="300"
            alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
       <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café</p>
       <h1 class="hero__title">REVU <span>1910</span></h1>
@@ -451,16 +473,43 @@
       alrededor del té y el café.
     </p>
 
-    <div class="event-next">
-      <p class="event-next__kicker" data-i18n="events.upcoming">Próximo evento</p>
-      <h3 class="event-next__title" data-i18n="events.none">No hay fechas publicadas por ahora</h3>
-      <p class="event-next__text" data-i18n="events.noneText">
-        Estamos preparando la siguiente experiencia. Síguenos en Instagram o Facebook, o
-        escríbenos por WhatsApp para avisarte en cuanto abramos lugares.
-      </p>
-      <div class="event-next__actions">
-        <a class="btn btn--gold" id="eventNotify" target="_blank" rel="noopener" href="#reservar" data-i18n="events.notify">Avísenme del próximo</a>
-        <a class="btn btn--ghost" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+    <div class="event-next event-next--live">
+      <div class="event-next__grid">
+        <figure class="event-next__poster">
+          <a href="images/evento-cata-tres-colores.jpg" target="_blank" rel="noopener"
+             data-i18n-aria="events.poster" aria-label="Ver el cartel completo">
+            <img src="images/evento-cata-tres-colores.jpg" width="867" height="1300" loading="lazy"
+                 alt="Cartel de la cata Tres Colores, México en una taza: martes 22 de septiembre de 2026 a las 5:00 PM" />
+          </a>
+        </figure>
+
+        <div class="event-next__info">
+          <p class="event-next__kicker" data-i18n="events.upcoming">Próximo evento</p>
+          <h3 class="event-next__title" data-i18n="ev.next.title">Tres Colores · México en una taza</h3>
+          <p class="event-next__text" data-i18n="ev.next.text">
+            Una experiencia sensorial donde los sabores, aromas y colores de México
+            se unen en una taza de té.
+          </p>
+          <dl class="event-next__specs">
+            <div>
+              <dt data-i18n="ev.next.dateLabel">Fecha</dt>
+              <dd data-i18n="ev.next.date">Martes 22 de septiembre de 2026</dd>
+            </div>
+            <div>
+              <dt data-i18n="ev.next.timeLabel">Hora</dt>
+              <dd>5:00 PM</dd>
+            </div>
+            <div>
+              <dt data-i18n="ev.next.priceLabel">Costo</dt>
+              <dd data-i18n="ev.next.price">$400 por persona</dd>
+            </div>
+          </dl>
+          <div class="event-next__actions">
+            <a class="btn btn--gold" id="eventNotify" target="_blank" rel="noopener" href="#reservar" data-i18n="ev.next.cta">Apartar mi lugar</a>
+            <a class="btn btn--ghost" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+          </div>
+          <p class="event-next__limited" data-i18n="ev.next.limited">Cupo limitado · previa reservación</p>
+        </div>
       </div>
     </div>
 
@@ -529,13 +578,17 @@
       </div>
 
       <aside class="reservar__aside">
-        <img class="aside__seal" src="images/logo-marca.png?v=8" width="300" height="300"
+        <img class="aside__seal" src="images/logo-marca.png?v=9" width="300" height="300"
              alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
         <h3 data-i18n="footer.tag">Casa de té &amp; café</h3>
         <div class="aside__block">
           <h4 data-i18n="footer.hoursTitle">Horario</h4>
           <p data-i18n-html="footer.hoursValue">Lunes a sábado<br />16:00 – 22:00</p>
           <p class="closed-note" data-i18n="footer.closed">Domingo: cerrado</p>
+          <p class="back-note">
+            <strong data-i18n="footer.backTitle">¡Ya estamos de vuelta!</strong>
+            <span data-i18n="footer.backText">A partir del 7 de septiembre retomamos nuestro horario de siempre.</span>
+          </p>
         </div>
         <div class="aside__block">
           <h4 data-i18n="footer.locationTitle">Ubicación</h4>
@@ -592,6 +645,10 @@
         <h4 data-i18n="footer.hoursTitle">Horario</h4>
         <p data-i18n-html="footer.hoursValue">Lunes a sábado<br />16:00 – 22:00</p>
         <p class="closed-note closed-note--dark" data-i18n="footer.closed">Domingo: cerrado</p>
+        <p class="back-note back-note--dark">
+          <strong data-i18n="footer.backTitle">¡Ya estamos de vuelta!</strong>
+          <span data-i18n="footer.backText">A partir del 7 de septiembre retomamos nuestro horario de siempre.</span>
+        </p>
       </div>
       <div>
         <h4 data-i18n="footer.contactTitle">Contacto</h4>
@@ -631,6 +688,6 @@
     <span data-i18n="nav.reserve">Reservar</span>
   </a>
 
-  <script src="app.js?v=8"></script>
+  <script src="app.js?v=9"></script>
 </body>
 </html>

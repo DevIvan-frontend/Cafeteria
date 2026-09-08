@@ -809,20 +809,19 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   color: var(--texto-3);
 }
 
-/* ================= Carta de temporada (cítricos) ============ */
+/* ================= Carta de temporada (otoño) =============== */
 .menu__tab--season {
-  border-color: #97a86f;
-  color: #5f7040;
-  background: rgba(151, 168, 111, .12);
+  border-color: #c8763a;
+  color: #93441c;
+  background: rgba(200, 118, 58, .12);
 }
-.menu__tab--season::before { content: "❧"; margin-right: .45rem; color: #7d9152; }
+.menu__tab--season::before { content: "🍂"; margin-right: .45rem; }
 .menu__tab--season.is-active {
-  background: #5f7040;
-  color: #fdf6e0;
-  border-color: #5f7040;
-  box-shadow: inset 0 0 0 1px rgba(253, 246, 224, .35);
+  background: #93441c;
+  color: #fdf1de;
+  border-color: #93441c;
+  box-shadow: inset 0 0 0 1px rgba(253, 241, 222, .35);
 }
-.menu__tab--season.is-active::before { color: #e2a24a; }
 
 .season {
   position: relative;
@@ -831,19 +830,19 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   padding: 2.6rem clamp(1rem, 4vw, 2.6rem) 2.4rem;
   border-radius: 3px;
   background:
-    radial-gradient(ellipse at 12% 0%, rgba(226, 162, 74, .13), transparent 55%),
-    radial-gradient(ellipse at 88% 100%, rgba(151, 168, 111, .18), transparent 55%),
-    linear-gradient(170deg, #fdf7e3, #f8f0d5 60%, #f3ead0);
-  border: 1px solid rgba(151, 168, 111, .5);
-  outline: 1px solid rgba(226, 162, 74, .28);
+    radial-gradient(ellipse at 14% 0%, rgba(200, 98, 42, .16), transparent 55%),
+    radial-gradient(ellipse at 86% 100%, rgba(217, 139, 43, .2), transparent 55%),
+    linear-gradient(168deg, #fdf3e2, #faead2 55%, #f3dcbd);
+  border: 1px solid rgba(200, 118, 58, .5);
+  outline: 1px solid rgba(147, 68, 28, .25);
   outline-offset: 4px;
-  box-shadow: inset 0 0 40px rgba(226, 162, 74, .07);
+  box-shadow: inset 0 0 44px rgba(200, 98, 42, .09);
 }
-/* Ramas de cítricos en las esquinas */
+/* Ramas de otoño en las esquinas */
 .season__leaf {
   position: absolute;
-  width: clamp(96px, 15vw, 150px);
-  color: #8fa267;
+  width: clamp(96px, 15vw, 152px);
+  color: #a9601f;
   opacity: .5;
   pointer-events: none;
 }
@@ -861,10 +860,10 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   font-weight: 700;
   letter-spacing: .26em;
   text-transform: uppercase;
-  color: #fdf7e3;
-  background: #5f7040;
-  border: 1px solid rgba(253, 247, 227, .4);
-  box-shadow: 0 6px 16px -8px rgba(95, 112, 64, .8);
+  color: #fdf3e2;
+  background: #93441c;
+  border: 1px solid rgba(253, 243, 226, .4);
+  box-shadow: 0 6px 16px -8px rgba(147, 68, 28, .85);
 }
 .season__head { text-align: center; position: relative; z-index: 1; }
 .season__title {
@@ -872,35 +871,39 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   font-weight: 400;
   font-size: clamp(2.1rem, 5vw, 3.1rem);
   line-height: 1.1;
-  color: #4c5c33;
+  color: #7d3712;
   margin: 0 0 .5rem;
 }
 .season__note {
-  max-width: 46ch;
+  max-width: 50ch;
   margin: 0 auto 2rem;
   font-style: italic;
-  color: #6c6444;
+  color: #6b4a2c;
   font-size: 1rem;
 }
 .season .menu__list { position: relative; z-index: 1; }
-.season .menu__item-name { color: #40371f; }
-.season .menu__item-desc { color: #6d6547; }
-.season .menu__leader { border-bottom-color: rgba(151, 168, 111, .7); }
-.season .menu__price { color: #8a5a18; }
+.season .menu__group { position: relative; z-index: 1; }
+.season .menu__group-title { color: #93441c; }
+.season .menu__group-title::before,
+.season .menu__group-title::after { background: rgba(200, 118, 58, .55); }
+.season .menu__item-name { color: #40301c; }
+.season .menu__item-desc { color: #6b5535; }
+.season .menu__leader { border-bottom-color: rgba(200, 118, 58, .7); }
+.season .menu__price { color: #a0521a; }
 .season__foot {
   position: relative;
   z-index: 1;
   margin: 2rem auto 0;
   padding-top: 1.2rem;
   max-width: 44ch;
-  border-top: 1px solid rgba(151, 168, 111, .45);
+  border-top: 1px solid rgba(200, 118, 58, .45);
   text-align: center;
   font-family: var(--grabado);
   font-size: .68rem;
   font-weight: 600;
   letter-spacing: .16em;
   text-transform: uppercase;
-  color: #6b6141;
+  color: #7a5a34;
 }
 
 /* =================== Selección de tés (tabla) =============== */
@@ -1240,6 +1243,77 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
 .event-next__text { max-width: 54ch; margin: 0 auto 1.7rem; color: var(--texto-1); }
 .event-next__actions { display: flex; gap: .8rem; justify-content: center; flex-wrap: wrap; }
 
+/* --- Próximo evento con cartel --- */
+.event-next--live { border-style: solid; border-color: var(--linea-oro); text-align: left; }
+.event-next__grid {
+  display: grid;
+  gap: clamp(1.6rem, 4vw, 2.8rem);
+  align-items: center;
+}
+@media (min-width: 820px) {
+  .event-next__grid { grid-template-columns: minmax(0, 300px) 1fr; }
+}
+.event-next__poster { margin: 0; }
+.event-next__poster a {
+  display: block;
+  background: var(--tarjeta);
+  border: 1px solid var(--linea-oro);
+  outline: 1px solid var(--linea);
+  outline-offset: 4px;
+  padding: 8px;
+  box-shadow: var(--sombra);
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+.event-next__poster a:hover { transform: translateY(-3px); box-shadow: 0 26px 50px -26px rgba(32,18,9,.65); }
+.event-next__poster a:focus-visible { outline: 2px solid var(--oro); outline-offset: 4px; }
+.event-next__poster img { width: 100%; height: auto; border: 1px solid var(--linea); }
+
+.event-next__info { text-align: left; }
+.event-next--live .event-next__kicker,
+.event-next--live .event-next__title,
+.event-next--live .event-next__text { text-align: left; }
+.event-next--live .event-next__text { margin-left: 0; margin-right: 0; }
+.event-next--live .event-next__actions { justify-content: flex-start; }
+
+.event-next__specs {
+  display: grid;
+  gap: .9rem;
+  margin: 0 0 1.6rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--linea-menta);
+  border-bottom: 1px solid var(--linea-menta);
+}
+@media (min-width: 560px) {
+  .event-next__specs { grid-template-columns: repeat(3, auto); justify-content: start; gap: 2.2rem; }
+}
+.event-next__specs dt {
+  font-family: var(--grabado);
+  font-size: .64rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--texto-3);
+  margin-bottom: .2rem;
+}
+.event-next__specs dd {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 1.06rem;
+  color: var(--espresso);
+}
+.event-next__limited {
+  margin: 1rem 0 0;
+  font-family: var(--grabado);
+  font-size: .66rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--oxido);
+}
+@media (max-width: 819px) {
+  .event-next__poster { max-width: 300px; margin: 0 auto; }
+}
+
 .events__past-title {
   font-family: var(--grabado);
   font-size: .84rem;
@@ -1574,6 +1648,35 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   margin: .45rem 0 0;
 }
 .closed-note--dark { color: #d98b78; }
+
+/* Aviso de regreso de vacaciones (buena noticia: va en verde) */
+.back-note {
+  display: block;
+  margin: .8rem 0 0;
+  padding: .6rem .8rem;
+  border-left: 3px solid var(--verdigris);
+  background: rgba(144, 204, 192, .16);
+  border-radius: 0 4px 4px 0;
+  font-size: .95rem;
+  line-height: 1.45;
+  color: var(--texto-1);
+}
+.back-note strong {
+  display: block;
+  font-family: var(--grabado);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--verdigris-dk);
+  margin-bottom: .2rem;
+}
+.back-note--dark {
+  background: rgba(144, 204, 192, .1);
+  border-left-color: var(--menta);
+  color: rgba(246, 239, 224, .82);
+}
+.back-note--dark strong { color: var(--menta); }
 
 /* Tarjeta lateral tipo boleto */
 .reservar__aside {
