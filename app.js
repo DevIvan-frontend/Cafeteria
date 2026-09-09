@@ -266,7 +266,7 @@ const I18N = {
   "footer.hoursValue":{ es: "Lunes a sábado<br />16:00 – 22:00", en: "Monday to Saturday<br />4:00 – 10:00 PM" },
   "footer.closed":    { es: "Domingo: cerrado", en: "Sunday: closed" },
   "footer.backTitle": { es: "¡Ya estamos de vuelta!", en: "We're back!" },
-  "footer.backText":  { es: "A partir del 7 de septiembre retomamos nuestro horario de siempre.", en: "As of September 7 we are back to our regular hours." },
+  "footer.backText":  { es: "A partir del 8 de septiembre retomamos nuestro horario de siempre.", en: "As of September 8 we are back to our regular hours." },
   "form.sundayClosed":{ es: "Los domingos permanecemos cerrados. Elige otro día, por favor.", en: "We are closed on Sundays. Please choose another day." },
   "footer.contactTitle": { es: "Contacto", en: "Contact" },
   "footer.followTitle": { es: "Síguenos", en: "Follow us" },
