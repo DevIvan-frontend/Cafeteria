@@ -1314,6 +1314,100 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
   .event-next__poster { max-width: 300px; margin: 0 auto; }
 }
 
+/* --- Dos carteles que se turnan solos --- */
+.event-switch__lead {
+  max-width: 58ch;
+  margin: 0 auto 1.8rem;
+  text-align: center;
+  font-style: italic;
+  color: var(--texto-2);
+}
+.event-switch { max-width: 780px; margin: 0 auto 3.6rem; }
+
+/* Los carteles se apilan en la misma celda: el alto lo marca el mas alto,
+   así nada salta cuando cambia el turno. */
+.event-switch__stage { display: grid; }
+.event-slide {
+  grid-area: 1 / 1;
+  max-width: none;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .55s ease, visibility 0s linear .55s;
+}
+.event-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity .55s ease, visibility 0s;
+}
+
+.event-switch__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .7rem 1.2rem;
+  margin-top: 1.7rem;
+}
+.event-switch__tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; }
+.event-tab {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--tarjeta);
+  border: 1px solid var(--linea);
+  color: var(--texto-2);
+  font-family: var(--grabado);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  padding: .6rem 1.15rem .75rem;
+  transition: background .25s ease, border-color .25s ease, color .25s ease;
+}
+.event-tab:hover { border-color: var(--oro); color: var(--espresso); }
+.event-tab:focus-visible { outline: 2px solid var(--oro); outline-offset: 3px; }
+.event-tab.is-active {
+  background: var(--verdigris-dk);
+  border-color: var(--verdigris-dk);
+  color: #fdfaf2;
+}
+.event-tab__text { position: relative; z-index: 1; }
+
+/* La barrita dorada es el reloj de la rotación: tarda 5 s en llenarse y al
+   terminar app.js pasa al siguiente cartel. Detenida, se queda llena. */
+.event-tab__fill {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: #e3c37c;              /* oro claro: 3.4:1 sobre la pestaña activa */
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.event-tab.is-active .event-tab__fill { transform: scaleX(1); }
+.event-switch.is-playing .event-tab.is-active .event-tab__fill {
+  animation: evFill 5s linear forwards;
+}
+.event-switch.is-paused .event-tab.is-active .event-tab__fill { animation-play-state: paused; }
+@keyframes evFill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* En pantallas angostas las dos pestanas y el contador caben en un renglon */
+@media (max-width: 430px) {
+  .event-switch__nav { gap: .5rem .8rem; }
+  .event-switch__tabs { gap: .4rem; }
+  .event-tab { font-size: .64rem; letter-spacing: .07em; padding: .75rem .7rem .9rem; }
+}
+
+.event-switch__count {
+  margin: 0;
+  font-family: var(--grabado);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+  color: var(--texto-3);
+}
+.event-switch__count span { color: #2a635c; }  /* verdigris hondo: 5.1:1 sobre el pergamino */
+
 .events__past-title {
   font-family: var(--grabado);
   font-size: .84rem;
@@ -1863,5 +1957,6 @@ code { background: var(--crema-2); padding: .05em .45em; border-radius: 4px; fon
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
+  .event-slide { transition: none; }
   .hero { background-attachment: scroll; }
 }

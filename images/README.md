@@ -44,9 +44,15 @@ comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
 | `boutique-tes.jpg` | recorte de `hero.jpg` | Foto secundaria (estantería de tés) |
 
 ### Eventos
+Los dos primeros son los carteles que se turnan solos en el bloque de
+próximos eventos (uno cada 5 s, hasta que el visitante elige); el resto
+ilustra las ediciones anteriores.
+
 | Archivo | Origen | Evento |
 |---|---|---|
-| `evento-cata-tres-colores.jpg` | INVITACION CATA | **Próximo:** cata Tres Colores (22 sep 2026) |
+| `evento-cata-halloween.jpg` | Halloween Tea Invitation | **Próximo:** Cata de Té Halloween (27 oct 2026) |
+| `evento-halloween-jack.jpg` | Revú 1910 Halloween en el Mundo de Jack | **Próximo:** noche de Halloween (31 oct 2026) |
+| `evento-cata-tres-colores.jpg` | INVITACION CATA | Cata Tres Colores (22 sep 2026) |
 | `galeria-teteras.jpg` | IMG_5676 | Un verano en Brujas |
 | `evento-te.jpg` | IMG_3007 | Día Internacional del Té |
 | `evento-catas.jpg` | IMG_3012 | Catas mensuales |
@@ -68,5 +74,8 @@ listas por si quieren rotarlas en la galería o en un evento nuevo.
 ## Cómo agregar o cambiar fotos
 1. Copia el original a `images/originales/`.
 2. Genera la versión web (lado mayor ~1400 px, calidad 81, progresiva).
+   Los **carteles** llevan otro trato: 900×1350, calidad 82 y sin
+   submuestreo de color (`subsampling=0`), para que no se ensucie la letra
+   fina ni el naranja sobre el fondo oscuro. Tampoco se les aplica enfoque.
 3. Ajusta el arreglo `GALERIA` o `EVENTOS` en `../app.js`, o la ruta del `<img>`
    correspondiente en `../index.html`.

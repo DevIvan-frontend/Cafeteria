@@ -47,7 +47,7 @@
 
   <!-- ?v= sube de número en cada cambio de diseño para que el navegador
        no siga usando la hoja de estilos vieja que tenga guardada -->
-  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="styles.css?v=11" />
 
   <!-- ============ Datos estructurados para Google ============ -->
   <script type="application/ld+json">
@@ -121,23 +121,45 @@
       },
       {
         "@type": "Event",
-        "@id": "https://revu1910.com/#cata-tres-colores",
-        "name": "Cata Tres Colores · México en una taza",
-        "description": "Una experiencia sensorial donde los sabores, aromas y colores de México se unen en una taza de té, guiada por nuestra Sommelier de Té certificada.",
-        "image": "https://revu1910.com/images/evento-cata-tres-colores.jpg",
-        "startDate": "2026-09-22T17:00:00-07:00",
-        "endDate": "2026-09-22T19:00:00-07:00",
+        "@id": "https://revu1910.com/#cata-halloween-2026",
+        "name": "Cata de Té Halloween · El Extraño Mundo de Jack",
+        "description": "Un viaje de aromas y sabores en un mundo muy peculiar: una cata dedicada por completo a los tés negros, guiada por nuestra Sommelier de Té certificada.",
+        "image": "https://revu1910.com/images/evento-cata-halloween.jpg",
+        "startDate": "2026-10-27T17:00:00-07:00",
+        "endDate": "2026-10-27T19:00:00-07:00",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "location": { "@id": "https://revu1910.com/#business" },
         "organizer": { "@id": "https://revu1910.com/#business" },
         "offers": {
           "@type": "Offer",
-          "price": "400",
+          "price": "450",
           "priceCurrency": "MXN",
           "availability": "https://schema.org/InStock",
           "url": "https://revu1910.com/#eventos",
-          "validFrom": "2026-09-07T00:00:00-07:00"
+          "validFrom": "2026-10-10T00:00:00-07:00"
+        }
+      },
+      {
+        "@type": "Event",
+        "@id": "https://revu1910.com/#halloween-2026",
+        "name": "Halloween en el Extraño Mundo de Jack",
+        "description": "Esa noche REVU 1910 se transforma en un rincón extraño, misterioso y encantador, donde las tazas, los dulces, las sombras y los disfraces se encuentran para celebrar. Bolsita especial de dulces a los disfraces relacionados con el tema.",
+        "image": "https://revu1910.com/images/evento-halloween-jack.jpg",
+        "startDate": "2026-10-31T16:00:00-07:00",
+        "endDate": "2026-10-31T22:00:00-07:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": { "@id": "https://revu1910.com/#business" },
+        "organizer": { "@id": "https://revu1910.com/#business" },
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "MXN",
+          "availability": "https://schema.org/InStock",
+          "url": "https://revu1910.com/#eventos",
+          "validFrom": "2026-10-10T00:00:00-07:00"
         }
       },
       {
@@ -246,8 +268,8 @@
       <span class="corner corner--br"><svg><use href="#corner-flourish"/></svg></span>
       <span class="corner corner--bl"><svg><use href="#corner-flourish"/></svg></span>
 
-      <!-- ?v=10 obliga al navegador a descartar la versión con fondo blanco -->
-      <img class="hero__seal" src="images/logo-marca.png?v=10" width="300" height="300"
+      <!-- ?v=11 obliga al navegador a descartar la versión con fondo blanco -->
+      <img class="hero__seal" src="images/logo-marca.png?v=11" width="300" height="300"
            alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
       <p class="hero__eyebrow" data-i18n="hero.eyebrow">Casa de té &amp; café</p>
       <h1 class="hero__title">REVU <span>1910</span></h1>
@@ -473,45 +495,119 @@
       alrededor del té y el café.
     </p>
 
-    <div class="event-next event-next--live">
-      <div class="event-next__grid">
-        <figure class="event-next__poster">
-          <a href="images/evento-cata-tres-colores.jpg" target="_blank" rel="noopener"
-             data-i18n-aria="events.poster" aria-label="Ver el cartel completo">
-            <img src="images/evento-cata-tres-colores.jpg" width="867" height="1300" loading="lazy"
-                 alt="Cartel de la cata Tres Colores, México en una taza: martes 22 de septiembre de 2026 a las 5:00 PM" />
-          </a>
-        </figure>
+    <p class="event-switch__lead" data-i18n-html="events.twoDates">
+      Este octubre tenemos dos citas, las dos bajo el mismo tema: <em>El Extraño Mundo de Jack</em>.
+    </p>
 
-        <div class="event-next__info">
-          <p class="event-next__kicker" data-i18n="events.upcoming">Próximo evento</p>
-          <h3 class="event-next__title" data-i18n="ev.next.title">Tres Colores · México en una taza</h3>
-          <p class="event-next__text" data-i18n="ev.next.text">
-            Una experiencia sensorial donde los sabores, aromas y colores de México
-            se unen en una taza de té.
-          </p>
-          <dl class="event-next__specs">
-            <div>
-              <dt data-i18n="ev.next.dateLabel">Fecha</dt>
-              <dd data-i18n="ev.next.date">Martes 22 de septiembre de 2026</dd>
+    <div class="event-switch" id="eventSwitch">
+      <div class="event-switch__stage">
+
+        <article class="event-next event-next--live event-slide is-active" id="evPanel-0"
+                 role="tabpanel" aria-labelledby="evTab-0">
+          <div class="event-next__grid">
+            <figure class="event-next__poster">
+              <a href="images/evento-cata-halloween.jpg" target="_blank" rel="noopener"
+                 data-i18n-aria="events.poster" aria-label="Ver el cartel completo">
+                <img src="images/evento-cata-halloween.jpg" width="900" height="1350" loading="lazy"
+                     data-i18n-alt="ev.cataHw.alt"
+                     alt="Cartel de la Cata de Té Halloween, El Extraño Mundo de Jack: 27 de octubre de 2026 a las 5:00 PM, $450 por persona" />
+              </a>
+            </figure>
+
+            <div class="event-next__info">
+              <p class="event-next__kicker" data-i18n="ev.cataHw.kicker">Cata de té · solo tés negros</p>
+              <h3 class="event-next__title" data-i18n="ev.cataHw.title">Cata de Té Halloween · El Extraño Mundo de Jack</h3>
+              <p class="event-next__text" data-i18n="ev.cataHw.text">
+                Un viaje de aromas y sabores en un mundo muy peculiar: una cata dedicada por
+                completo a los tés negros, guiada por nuestra Sommelier de Té certificada.
+              </p>
+              <dl class="event-next__specs">
+                <div>
+                  <dt data-i18n="ev.next.dateLabel">Fecha</dt>
+                  <dd data-i18n="ev.cataHw.date">Martes 27 de octubre de 2026</dd>
+                </div>
+                <div>
+                  <dt data-i18n="ev.next.timeLabel">Hora</dt>
+                  <dd>5:00 PM</dd>
+                </div>
+                <div>
+                  <dt data-i18n="ev.next.priceLabel">Costo</dt>
+                  <dd data-i18n="ev.cataHw.price">$450 por persona</dd>
+                </div>
+              </dl>
+              <div class="event-next__actions">
+                <a class="btn btn--gold" data-ev-msg="evCata" target="_blank" rel="noopener"
+                   href="#reservar" data-i18n="ev.next.cta">Apartar mi lugar</a>
+                <a class="btn btn--ghost" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+              </div>
+              <p class="event-next__limited" data-i18n="ev.next.limited">Cupo limitado · previa reservación</p>
             </div>
-            <div>
-              <dt data-i18n="ev.next.timeLabel">Hora</dt>
-              <dd>5:00 PM</dd>
-            </div>
-            <div>
-              <dt data-i18n="ev.next.priceLabel">Costo</dt>
-              <dd data-i18n="ev.next.price">$400 por persona</dd>
-            </div>
-          </dl>
-          <div class="event-next__actions">
-            <a class="btn btn--gold" id="eventNotify" target="_blank" rel="noopener" href="#reservar" data-i18n="ev.next.cta">Apartar mi lugar</a>
-            <a class="btn btn--ghost" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
           </div>
-          <p class="event-next__limited" data-i18n="ev.next.limited">Cupo limitado · previa reservación</p>
+        </article>
+
+        <article class="event-next event-next--live event-slide" id="evPanel-1"
+                 role="tabpanel" aria-labelledby="evTab-1">
+          <div class="event-next__grid">
+            <figure class="event-next__poster">
+              <a href="images/evento-halloween-jack.jpg" target="_blank" rel="noopener"
+                 data-i18n-aria="events.poster" aria-label="Ver el cartel completo">
+                <img src="images/evento-halloween-jack.jpg" width="900" height="1350" loading="lazy"
+                     data-i18n-alt="ev.hw.alt"
+                     alt="Cartel del Halloween de REVU 1910, El Extraño Mundo de Jack: 31 de octubre de 4:00 a 10:00 PM" />
+              </a>
+            </figure>
+
+            <div class="event-next__info">
+              <p class="event-next__kicker" data-i18n="ev.hw.kicker">Noche de Halloween · tradición de la casa</p>
+              <h3 class="event-next__title" data-i18n="ev.hw.title">Halloween en el Extraño Mundo de Jack</h3>
+              <p class="event-next__text" data-i18n="ev.hw.text">
+                Esa noche la casa se transforma en un rincón extraño, misterioso y encantador,
+                donde las tazas, los dulces, las sombras y los disfraces se encuentran para celebrar.
+              </p>
+              <dl class="event-next__specs">
+                <div>
+                  <dt data-i18n="ev.next.dateLabel">Fecha</dt>
+                  <dd data-i18n="ev.hw.date">Sábado 31 de octubre de 2026</dd>
+                </div>
+                <div>
+                  <dt data-i18n="ev.next.timeLabel">Hora</dt>
+                  <dd data-i18n="ev.hw.time">4:00 PM a 10:00 PM</dd>
+                </div>
+                <div>
+                  <dt data-i18n="ev.hw.treatLabel">Disfraces</dt>
+                  <dd data-i18n="ev.hw.treat">Bolsita de dulces al disfraz del tema</dd>
+                </div>
+              </dl>
+              <div class="event-next__actions">
+                <a class="btn btn--gold" data-ev-msg="evHalloween" target="_blank" rel="noopener"
+                   href="#reservar" data-i18n="ev.hw.cta">Apartar mi mesa</a>
+                <a class="btn btn--ghost" data-ig href="#" target="_blank" rel="noopener">Instagram</a>
+              </div>
+              <p class="event-next__limited" data-i18n="ev.hw.limited">Entrada libre · ven disfrazado</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="event-switch__nav">
+        <div class="event-switch__tabs" role="tablist"
+             data-i18n-aria="events.tablist" aria-label="Carteles de los dos eventos de octubre">
+          <button class="event-tab is-active" type="button" role="tab" id="evTab-0"
+                  aria-controls="evPanel-0" aria-selected="true" data-slide="0">
+            <span class="event-tab__text" data-i18n="ev.cataHw.tab">27 oct · Cata</span>
+            <span class="event-tab__fill" aria-hidden="true"></span>
+          </button>
+          <button class="event-tab" type="button" role="tab" id="evTab-1"
+                  aria-controls="evPanel-1" aria-selected="false" tabindex="-1" data-slide="1">
+            <span class="event-tab__text" data-i18n="ev.hw.tab">31 oct · Halloween</span>
+            <span class="event-tab__fill" aria-hidden="true"></span>
+          </button>
         </div>
+        <p class="event-switch__count" aria-hidden="true"><span id="evCount">1</span> / 2</p>
       </div>
     </div>
+
 
     <h3 class="events__past-title" data-i18n="events.past">Ediciones anteriores</h3>
     <p class="events__past-note" data-i18n="events.pastNote">Así se han vivido nuestras experiencias más recientes.</p>
@@ -578,7 +674,7 @@
       </div>
 
       <aside class="reservar__aside">
-        <img class="aside__seal" src="images/logo-marca.png?v=10" width="300" height="300"
+        <img class="aside__seal" src="images/logo-marca.png?v=11" width="300" height="300"
              alt="Emblema de REVU 1910: una tetera y una taza grabadas en relieve" />
         <h3 data-i18n="footer.tag">Casa de té &amp; café</h3>
         <div class="aside__block">
@@ -688,6 +784,6 @@
     <span data-i18n="nav.reserve">Reservar</span>
   </a>
 
-  <script src="app.js?v=10"></script>
+  <script src="app.js?v=11"></script>
 </body>
 </html>

@@ -209,21 +209,44 @@ const I18N = {
   "events.intro":     { es: "Cada cierto tiempo abrimos la casa para catas, talleres y experiencias sensoriales alrededor del té y el café.", en: "Every so often we open the house for tastings, workshops and sensory experiences around tea and coffee." },
   "events.upcoming":  { es: "Próximo evento", en: "Next event" },
   "events.poster":    { es: "Ver el cartel completo", en: "See the full poster" },
-  "ev.next.title":    { es: "Tres Colores · México en una taza", en: "Tres Colores · Mexico in a cup" },
-  "ev.next.text":     { es: "Una experiencia sensorial donde los sabores, aromas y colores de México se unen en una taza de té.", en: "A sensory experience where the flavors, aromas and colors of Mexico come together in a cup of tea." },
+  "events.twoDates":  { es: "Este octubre tenemos dos citas, las dos bajo el mismo tema: <em>El Extraño Mundo de Jack</em>.", en: "This October we have two dates, both under the same theme: <em>Jack’s Strange World</em>." },
+  "events.tablist":   { es: "Carteles de los dos eventos de octubre", en: "Posters for the two October events" },
   "ev.next.dateLabel":{ es: "Fecha", en: "Date" },
-  "ev.next.date":     { es: "Martes 22 de septiembre de 2026", en: "Tuesday, September 22, 2026" },
   "ev.next.timeLabel":{ es: "Hora", en: "Time" },
   "ev.next.priceLabel":{ es: "Costo", en: "Price" },
-  "ev.next.price":    { es: "$400 por persona", en: "$400 per person" },
   "ev.next.cta":      { es: "Apartar mi lugar", en: "Reserve my spot" },
   "ev.next.limited":  { es: "Cupo limitado · previa reservación", en: "Limited seats · by reservation" },
+
+  // Cartel 1: cata de té de Halloween (27 de octubre)
+  "ev.cataHw.tab":    { es: "27 oct · Cata", en: "Oct 27 · Tasting" },
+  "ev.cataHw.kicker": { es: "Cata de té · solo tés negros", en: "Tea tasting · black teas only" },
+  "ev.cataHw.title":  { es: "Cata de Té Halloween · El Extraño Mundo de Jack", en: "Halloween Tea Tasting · Jack’s Strange World" },
+  "ev.cataHw.text":   { es: "Un viaje de aromas y sabores en un mundo muy peculiar: una cata dedicada por completo a los tés negros, guiada por nuestra Sommelier de Té certificada.", en: "A journey of aromas and flavors through a very peculiar world: a tasting devoted entirely to black teas, guided by our certified Tea Sommelier." },
+  "ev.cataHw.date":   { es: "Martes 27 de octubre de 2026", en: "Tuesday, October 27, 2026" },
+  "ev.cataHw.price":  { es: "$450 por persona", en: "$450 per person" },
+  "ev.cataHw.alt":    { es: "Cartel de la Cata de Té Halloween, El Extraño Mundo de Jack: 27 de octubre de 2026 a las 5:00 PM, $450 por persona", en: "Poster for the Halloween Tea Tasting, Jack’s Strange World: October 27, 2026 at 5:00 PM, $450 per person" },
+
+  // Cartel 2: la noche de Halloween (31 de octubre)
+  "ev.hw.tab":        { es: "31 oct · Halloween", en: "Oct 31 · Halloween" },
+  "ev.hw.kicker":     { es: "Noche de Halloween · tradición de la casa", en: "Halloween night · a house tradition" },
+  "ev.hw.title":      { es: "Halloween en el Extraño Mundo de Jack", en: "Halloween in Jack’s Strange World" },
+  "ev.hw.text":       { es: "Esa noche la casa se transforma en un rincón extraño, misterioso y encantador, donde las tazas, los dulces, las sombras y los disfraces se encuentran para celebrar.", en: "That night the house turns into a strange, mysterious and charming corner, where cups, sweets, shadows and costumes come together to celebrate." },
+  "ev.hw.date":       { es: "Sábado 31 de octubre de 2026", en: "Saturday, October 31, 2026" },
+  "ev.hw.time":       { es: "4:00 PM a 10:00 PM", en: "4:00 PM to 10:00 PM" },
+  "ev.hw.treatLabel": { es: "Disfraces", en: "Costumes" },
+  "ev.hw.treat":      { es: "Bolsita de dulces al disfraz del tema", en: "Candy bag for on-theme costumes" },
+  "ev.hw.cta":        { es: "Apartar mi mesa", en: "Book my table" },
+  "ev.hw.limited":    { es: "Entrada libre · ven disfrazado", en: "Free entry · come in costume" },
+  "ev.hw.alt":        { es: "Cartel del Halloween de REVU 1910, El Extraño Mundo de Jack: 31 de octubre de 4:00 a 10:00 PM", en: "Poster for REVU 1910’s Halloween, Jack’s Strange World: October 31 from 4:00 to 10:00 PM" },
   "events.none":      { es: "No hay fechas publicadas por ahora", en: "No dates published right now" },
   "events.noneText":  { es: "Estamos preparando la siguiente experiencia. Síguenos en Instagram o Facebook, o escríbenos por WhatsApp para avisarte en cuanto abramos lugares.", en: "We're preparing the next experience. Follow us on Instagram or Facebook, or message us on WhatsApp and we'll let you know as soon as spots open." },
   "events.notify":    { es: "Avísenme del próximo", en: "Notify me of the next one" },
   "events.past":      { es: "Ediciones anteriores", en: "Past editions" },
   "events.pastNote":  { es: "Así se han vivido nuestras experiencias más recientes.", en: "A look at our most recent experiences." },
 
+  "ev.tres.date":     { es: "22 de septiembre de 2026", en: "September 22, 2026" },
+  "ev.tres.title":    { es: "Tres Colores · México en una taza", en: "Tres Colores · Mexico in a cup" },
+  "ev.tres.text":     { es: "Una experiencia sensorial donde los sabores, aromas y colores de México se unieron en una taza de té, guiada por nuestra Sommelier de Té certificada.", en: "A sensory experience where the flavors, aromas and colors of Mexico came together in a cup of tea, guided by our certified Tea Sommelier." },
   "ev.brujas.date":   { es: "21 de julio de 2026", en: "July 21, 2026" },
   "ev.brujas.title":  { es: "Un verano en Brujas", en: "A summer in Bruges" },
   "ev.brujas.text":   { es: "Una tarde para viajar a través del té, inspirada en Het Brugs Theehuis (Brujas, Bélgica): cinco tés y cinco formas de disfrutarlos —cold brew, tea soda, en las rocas, infusión tradicional y maridajes seleccionados.", en: "An afternoon of travelling through tea, inspired by Het Brugs Theehuis (Bruges, Belgium): five teas and five ways to enjoy them — cold brew, tea soda, on the rocks, traditional infusion and curated pairings." },
@@ -712,6 +735,7 @@ function initStorySlider() {
 
 /* --------------------------- Eventos ----------------------------- */
 const EVENTOS = [
+  { key: "tres", img: "images/evento-cata-tres-colores.jpg" },
   { key: "brujas", img: "images/galeria-teteras.jpg" },
   { key: "dia", img: "images/evento-te.jpg" },
   { key: "cata", img: "images/evento-catas.jpg" },
@@ -731,6 +755,132 @@ function renderEventos() {
         <p class="event__text">${t(`ev.${e.key}.text`)}</p>
       </div>
     </article>`).join("");
+}
+
+/* --------- Los dos carteles del proximo evento (se alternan) ------ */
+/**
+ * Alterna los dos carteles cada 5 segundos. El turno lo lleva un temporizador
+ * y la barrita dorada de la pestana activa lo dibuja: las dos arrancan en el
+ * mismo instante, asi que la barra siempre dice cuanto falta. En cuanto el
+ * visitante interactua (pestana, cartel, teclado o deslizar) la rotacion se
+ * detiene para siempre y el control queda en sus manos.
+ */
+function initEventSwitch() {
+  const caja = $("#eventSwitch");
+  if (!caja) return;
+
+  const slides = $$(".event-slide", caja);
+  const tabs = $$(".event-tab", caja);
+  const contador = $("#evCount", caja);
+  if (slides.length < 2 || tabs.length !== slides.length) return;
+
+  const TURNO = 5000;
+  let actual = 0;
+  let detenido = false;
+  let reloj = null;
+  let arranque = 0;
+  let restante = TURNO;
+
+  function mostrar(i) {
+    actual = (i + slides.length) % slides.length;
+    slides.forEach((s, n) => s.classList.toggle("is-active", n === actual));
+    tabs.forEach((b, n) => {
+      const activa = n === actual;
+      b.classList.toggle("is-active", activa);
+      b.setAttribute("aria-selected", activa ? "true" : "false");
+      b.tabIndex = activa ? 0 : -1;
+    });
+    if (contador) contador.textContent = String(actual + 1);
+    programar(TURNO);
+  }
+
+  /** Deja listo el siguiente salto (y con el, la barrita que lo dibuja). */
+  function programar(ms) {
+    clearTimeout(reloj);
+    reloj = null;
+    if (detenido || !caja.classList.contains("is-playing")) return;
+    arranque = Date.now();
+    restante = ms;
+    reloj = setTimeout(() => mostrar(actual + 1), ms);
+  }
+
+  /** Pausa temporal: guarda lo que faltaba para reanudar donde iba. */
+  function pausar() {
+    caja.classList.add("is-paused");
+    if (!reloj) return;
+    clearTimeout(reloj);
+    reloj = null;
+    restante = Math.max(500, restante - (Date.now() - arranque));
+  }
+
+  function reanudar() {
+    caja.classList.remove("is-paused");
+    programar(restante);
+  }
+
+  /** El visitante tomo el control: ya no rotamos solos. */
+  function detener() {
+    if (detenido) return;
+    detenido = true;
+    clearTimeout(reloj);
+    reloj = null;
+    caja.classList.remove("is-playing", "is-paused");
+  }
+
+  // --- Lo que cede el control al visitante ---
+  tabs.forEach((b, n) => b.addEventListener("click", () => { detener(); mostrar(n); }));
+
+  // Flechas dentro de las pestanas (patron ARIA de tablist)
+  $(".event-switch__tabs", caja)?.addEventListener("keydown", (e) => {
+    const paso = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+    if (!paso) return;
+    e.preventDefault();
+    detener();
+    mostrar(actual + paso);
+    tabs[actual].focus();
+  });
+
+  // Tocar un cartel, o llegar a el con el tabulador, tambien detiene el turno
+  const escenario = $(".event-switch__stage", caja);
+  caja.addEventListener("focusin", detener);
+  escenario?.addEventListener("pointerdown", detener);
+
+  // Deslizar de lado en el celular
+  let inicioX = null;
+  escenario?.addEventListener("pointerdown", (e) => { inicioX = e.clientX; });
+  escenario?.addEventListener("pointerup", (e) => {
+    if (inicioX === null) return;
+    const dx = e.clientX - inicioX;
+    inicioX = null;
+    if (Math.abs(dx) > 45) mostrar(actual + (dx < 0 ? 1 : -1));
+  });
+
+  // Con el puntero encima se pausa, para dar tiempo de leer el cartel
+  caja.addEventListener("mouseenter", () => { if (!detenido) pausar(); });
+  caja.addEventListener("mouseleave", () => { if (!detenido) reanudar(); });
+
+  // Quien pidio menos movimiento en su sistema elige el cartel a mano.
+  if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) {
+    detenido = true;
+  } else {
+    // Arranca rotando; el observador solo la pausa mientras la seccion queda
+    // fuera de pantalla, para que quien llegue scrolleando alcance el primer
+    // cartel completo. Sin observador, rota sin mas.
+    caja.classList.add("is-playing");
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((entradas) => {
+        entradas.forEach((en) => {
+          if (detenido) return;
+          caja.classList.toggle("is-playing", en.isIntersecting);
+          if (en.isIntersecting) programar(TURNO);
+          else { clearTimeout(reloj); reloj = null; }
+        });
+      }, { threshold: 0, rootMargin: "0px 0px -25% 0px" });
+      io.observe(caja);
+    }
+  }
+
+  mostrar(0);
 }
 
 /* --------------------------- Galería ----------------------------- */
@@ -877,7 +1027,8 @@ function whatsappTexts() {
         greet: `¡Hola ${CONFIG.nombreNegocio}! Quiero reservar una mesa 🫖`,
         name: "Nombre", people: "Personas", date: "Fecha", time: "Hora", notes: "Notas",
         opening: "Abriendo WhatsApp… si no abre, revisa tu bloqueador de ventanas.",
-        events: `¡Hola ${CONFIG.nombreNegocio}! Quiero apartar mi lugar para la cata "Tres Colores" del martes 22 de septiembre a las 5:00 PM.`,
+        evCata: `¡Hola ${CONFIG.nombreNegocio}! Quiero apartar mi lugar para la Cata de Té Halloween del martes 27 de octubre a las 5:00 PM.`,
+        evHalloween: `¡Hola ${CONFIG.nombreNegocio}! Quiero apartar mesa para la noche de Halloween del sábado 31 de octubre.`,
         shop: `¡Hola ${CONFIG.nombreNegocio}! Quisiera saber qué tienen disponible en la boutique.`,
       }
     : {
@@ -885,7 +1036,8 @@ function whatsappTexts() {
         greet: `Hi ${CONFIG.nombreNegocio}! I'd like to book a table 🫖`,
         name: "Name", people: "Guests", date: "Date", time: "Time", notes: "Notes",
         opening: "Opening WhatsApp… if it doesn't open, check your pop-up blocker.",
-        events: `Hi ${CONFIG.nombreNegocio}! I'd like to reserve a spot for the "Tres Colores" tasting on Tuesday, September 22 at 5:00 PM.`,
+        evCata: `Hi ${CONFIG.nombreNegocio}! I'd like to reserve a spot for the Halloween Tea Tasting on Tuesday, October 27 at 5:00 PM.`,
+        evHalloween: `Hi ${CONFIG.nombreNegocio}! I'd like to book a table for Halloween night on Saturday, October 31.`,
         shop: `Hi ${CONFIG.nombreNegocio}! I'd like to know what you have available in the shop.`,
       };
 }
@@ -895,8 +1047,10 @@ function refreshWaLinks() {
   const chatUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(w.chat)}`;
   $("#waLink") && ($("#waLink").href = chatUrl);
   $("#waFloat") && ($("#waFloat").href = chatUrl);
-  const ev = $("#eventNotify");
-  if (ev) ev.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(w.events)}`;
+  $$("[data-ev-msg]").forEach((el) => {
+    const msg = w[el.dataset.evMsg];
+    if (msg) el.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+  });
   const shop = $("#shopLink");
   if (shop) shop.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(w.shop)}`;
 }
@@ -975,6 +1129,7 @@ function applyLang(lang) {
   $$("[data-i18n-html]").forEach((el) => { el.innerHTML = t(el.dataset.i18nHtml); });
   $$("[data-i18n-ph]").forEach((el) => { el.placeholder = t(el.dataset.i18nPh); });
   $$("[data-i18n-aria]").forEach((el) => { el.setAttribute("aria-label", t(el.dataset.i18nAria)); });
+  $$("[data-i18n-alt]").forEach((el) => { el.alt = t(el.dataset.i18nAlt); });
 
   // Botón de idioma: muestra el idioma AL QUE se cambiará
   const toggle = $("#langToggle");
@@ -1053,6 +1208,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initContacto();
   initLightbox();
   initStorySlider();
+  initEventSwitch();
   initUI();
   applyLang(detectLang());
 });
