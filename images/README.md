@@ -43,15 +43,28 @@ comprimir** se conservan en `originales/`, que no se sube a GitHub (está en
 | `boutique-utensilios.jpg` | utencilios para té | Foto principal (expositor de accesorios) |
 | `boutique-tes.jpg` | recorte de `hero.jpg` | Foto secundaria (estantería de tés) |
 
-### Eventos
-Los dos primeros son los carteles que se turnan solos en el bloque de
-próximos eventos (uno cada 5 s, hasta que el visitante elige); el resto
-ilustra las ediciones anteriores.
+### Noticias (el bloque que se turna solo en "Talleres & catas")
+Cada noticia lleva una imagen principal en formato 4:5 y dos miniaturas 3:2
+que abren la versión completa en otra pestaña.
 
+| Archivo | Origen | Uso |
+|---|---|---|
+| `prensa-mujeresaladas-portada.jpg` | recorte de la pág. 136 | **Principal:** mención en la revista Mujeresaladas (nov. 2026) |
+| `prensa-mujeresaladas-136.webp` | captura de la revista | Doble página completa, primera parte |
+| `prensa-mujeresaladas-138.webp` | captura de la revista | Doble página completa, segunda parte |
+| `prensa-mujeresaladas-136-mini.jpg`, `-138-mini.jpg` | — | Miniaturas de las dos dobles páginas |
+| `donblack-emblema.jpg` | recorte de Don Black03 | **Principal:** el emblema de REVU 1910 en la camioneta #755 |
+| `donblack-1.jpg`, `donblack-2.jpg`, `donblack-3.jpg` | Don Black01–03 | Fotos completas de la camioneta |
+| `donblack-1-mini.jpg`, `donblack-2-mini.jpg` | — | Miniaturas |
+
+Las dobles páginas de la revista se quedan en WebP tal como llegaron: son
+puro texto y recomprimirlas sólo las ensuciaría.
+
+### Eventos (ediciones anteriores)
 | Archivo | Origen | Evento |
 |---|---|---|
-| `evento-cata-halloween.jpg` | Halloween Tea Invitation | **Próximo:** Cata de Té Halloween (27 oct 2026) |
-| `evento-halloween-jack.jpg` | Revú 1910 Halloween en el Mundo de Jack | **Próximo:** noche de Halloween (31 oct 2026) |
+| `evento-halloween-jack.jpg` | Revú 1910 Halloween en el Mundo de Jack | Noche de Halloween (31 oct 2026) |
+| `evento-cata-halloween.jpg` | Halloween Tea Invitation | Cata de Té Halloween (27 oct 2026) |
 | `evento-cata-tres-colores.jpg` | INVITACION CATA | Cata Tres Colores (22 sep 2026) |
 | `galeria-teteras.jpg` | IMG_5676 | Un verano en Brujas |
 | `evento-te.jpg` | IMG_3007 | Día Internacional del Té |

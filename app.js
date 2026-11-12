@@ -127,8 +127,10 @@ const I18N = {
   "m.group.other":    { es: "Otras bebidas", en: "Other drinks" },
   "m.group.season":   { es: "Por tiempo limitado", en: "For a limited time" },
   "m.season.title":   { es: "Bebidas & postres de temporada", en: "Seasonal drinks & desserts" },
-  "m.season.text":    { es: "Llegó el otoño y con él la calabaza: especias, nuez y canela en bebidas y postres que preparamos sólo mientras dura la temporada.", en: "Autumn is here, and so is pumpkin: spice, walnut and cinnamon in drinks and desserts we make only while the season lasts." },
-  "m.season.drinks":  { es: "Bebidas", en: "Drinks" },
+  "m.season.text":    { es: "Llegó el invierno, y con él la menta, el jengibre y la canela: bebidas para entrar en calor y postres que horneamos sólo mientras dura la temporada.", en: "Winter is here, and with it peppermint, ginger and cinnamon: drinks to warm you up and desserts we bake only while the season lasts." },
+  "m.season.coffee":  { es: "Bebidas a base de café", en: "Coffee-based drinks" },
+  "m.season.teas":    { es: "Selección de tés", en: "Tea selection" },
+  "m.season.ask":     { es: "Pregunta por el Snow Choco Roll y las galletas de jengibre", en: "Ask about the Snow Choco Roll and the gingerbread cookies" },
   "m.season.desserts":{ es: "Postres", en: "Desserts" },
   "story.prev":       { es: "Capítulo anterior", en: "Previous chapter" },
   "story.next":       { es: "Capítulo siguiente", en: "Next chapter" },
@@ -209,41 +211,61 @@ const I18N = {
   "events.intro":     { es: "Cada cierto tiempo abrimos la casa para catas, talleres y experiencias sensoriales alrededor del té y el café.", en: "Every so often we open the house for tastings, workshops and sensory experiences around tea and coffee." },
   "events.upcoming":  { es: "Próximo evento", en: "Next event" },
   "events.poster":    { es: "Ver el cartel completo", en: "See the full poster" },
-  "events.twoDates":  { es: "Este octubre tenemos dos citas, las dos bajo el mismo tema: <em>El Extraño Mundo de Jack</em>.", en: "This October we have two dates, both under the same theme: <em>Jack’s Strange World</em>." },
-  "events.tablist":   { es: "Carteles de los dos eventos de octubre", en: "Posters for the two October events" },
+  "events.twoNews":   { es: "Dos noticias de la casa este noviembre: nuestra fundadora en la revista <em>Mujeresaladas</em> y nuestro emblema rumbo a la Baja 1000.", en: "Two pieces of house news this November: our founder in <em>Mujeresaladas</em> magazine, and our emblem on its way to the Baja 1000." },
+  "events.tablist":   { es: "Las dos noticias de noviembre", en: "This November’s two news items" },
   "ev.next.dateLabel":{ es: "Fecha", en: "Date" },
   "ev.next.timeLabel":{ es: "Hora", en: "Time" },
   "ev.next.priceLabel":{ es: "Costo", en: "Price" },
   "ev.next.cta":      { es: "Apartar mi lugar", en: "Reserve my spot" },
   "ev.next.limited":  { es: "Cupo limitado · previa reservación", en: "Limited seats · by reservation" },
 
-  // Cartel 1: cata de té de Halloween (27 de octubre)
-  "ev.cataHw.tab":    { es: "27 oct · Cata", en: "Oct 27 · Tasting" },
-  "ev.cataHw.kicker": { es: "Cata de té · solo tés negros", en: "Tea tasting · black teas only" },
-  "ev.cataHw.title":  { es: "Cata de Té Halloween · El Extraño Mundo de Jack", en: "Halloween Tea Tasting · Jack’s Strange World" },
-  "ev.cataHw.text":   { es: "Un viaje de aromas y sabores en un mundo muy peculiar: una cata dedicada por completo a los tés negros, guiada por nuestra Sommelier de Té certificada.", en: "A journey of aromas and flavors through a very peculiar world: a tasting devoted entirely to black teas, guided by our certified Tea Sommelier." },
-  "ev.cataHw.date":   { es: "Martes 27 de octubre de 2026", en: "Tuesday, October 27, 2026" },
-  "ev.cataHw.price":  { es: "$450 por persona", en: "$450 per person" },
-  "ev.cataHw.alt":    { es: "Cartel de la Cata de Té Halloween, El Extraño Mundo de Jack: 27 de octubre de 2026 a las 5:00 PM, $450 por persona", en: "Poster for the Halloween Tea Tasting, Jack’s Strange World: October 27, 2026 at 5:00 PM, $450 per person" },
+  // Noticia 1: la columna de Graciela en la revista Mujeresaladas (nov. 2026)
+  "ev.press.tab":       { es: "En la prensa", en: "In the press" },
+  "ev.press.kicker":    { es: "En la prensa · Mujeresaladas n.º 32", en: "In the press · Mujeresaladas No. 32" },
+  "ev.press.title":     { es: "La primera Casa de Té de La Paz, en la revista Mujeresaladas", en: "La Paz’s first Tea House, featured in Mujeresaladas magazine" },
+  "ev.press.text":      { es: "La edición de noviembre, especial de Día de Muertos, publica «La Hora del Té», la columna de nuestra fundadora, Graciela Ríos Calderón: primera Sommelier de Té certificada de Baja California Sur y quien abrió en 2023 la primera Casa de Té de La Paz. Esta vez cata Tribu de Brujas, una mezcla de pu-erh, cacao, menta y cempasúchil.", en: "The November issue, a Day of the Dead special, features “La Hora del Té”, the column by our founder, Graciela Ríos Calderón: the first certified Tea Sommelier in Baja California Sur, who opened La Paz’s first Tea House in 2023. This time she tastes Tribu de Brujas, a blend of pu-erh, cacao, mint and Mexican marigold." },
+  "ev.press.magLabel":  { es: "Revista", en: "Magazine" },
+  "ev.press.issueLabel":{ es: "Edición", en: "Issue" },
+  "ev.press.issue":     { es: "Nov. 2026", en: "Nov 2026" },
+  "ev.press.pageLabel": { es: "Página", en: "Page" },
+  "ev.press.cta":       { es: "Leer el artículo", en: "Read the article" },
+  "ev.press.foot":      { es: "Revista digital mensual · la columna empieza en la página 136", en: "Monthly digital magazine · the column starts on page 136" },
+  "ev.press.alt":       { es: "Página 136 de la revista Mujeresaladas: «La Hora del Té», por Graciela Ríos Calderón, con su artículo Tribu de Brujas y su retrato tomando el té", en: "Page 136 of Mujeresaladas magazine: “La Hora del Té”, by Graciela Ríos Calderón, with her article Tribu de Brujas and a portrait of her having tea" },
+  "ev.press.open":      { es: "Abrir en grande la doble página donde empieza el artículo", en: "Open the spread where the article begins, full size" },
+  "ev.press.thumb1":    { es: "Primera parte", en: "Part one" },
+  "ev.press.thumb1Alt": { es: "Doble página con el inicio del artículo.", en: "Spread with the beginning of the article." },
+  "ev.press.thumb2":    { es: "Segunda parte", en: "Part two" },
+  "ev.press.thumb2Alt": { es: "Doble página con la preparación, la nota de cata y la semblanza de la autora.", en: "Spread with the preparation, the tasting notes and the author’s bio." },
 
-  // Cartel 2: la noche de Halloween (31 de octubre)
-  "ev.hw.tab":        { es: "31 oct · Halloween", en: "Oct 31 · Halloween" },
-  "ev.hw.kicker":     { es: "Noche de Halloween · tradición de la casa", en: "Halloween night · a house tradition" },
-  "ev.hw.title":      { es: "Halloween en el Extraño Mundo de Jack", en: "Halloween in Jack’s Strange World" },
-  "ev.hw.text":       { es: "Esa noche la casa se transforma en un rincón extraño, misterioso y encantador, donde las tazas, los dulces, las sombras y los disfraces se encuentran para celebrar.", en: "That night the house turns into a strange, mysterious and charming corner, where cups, sweets, shadows and costumes come together to celebrate." },
-  "ev.hw.date":       { es: "Sábado 31 de octubre de 2026", en: "Saturday, October 31, 2026" },
-  "ev.hw.time":       { es: "4:00 PM a 10:00 PM", en: "4:00 PM to 10:00 PM" },
-  "ev.hw.treatLabel": { es: "Disfraces", en: "Costumes" },
-  "ev.hw.treat":      { es: "Bolsita de dulces al disfraz del tema", en: "Candy bag for on-theme costumes" },
-  "ev.hw.cta":        { es: "Apartar mi mesa", en: "Book my table" },
-  "ev.hw.limited":    { es: "Entrada libre · ven disfrazado", en: "Free entry · come in costume" },
-  "ev.hw.alt":        { es: "Cartel del Halloween de REVU 1910, El Extraño Mundo de Jack: 31 de octubre de 4:00 a 10:00 PM", en: "Poster for REVU 1910’s Halloween, Jack’s Strange World: October 31 from 4:00 to 10:00 PM" },
+  // Noticia 2: Don Black Racing #755 en la SCORE Baja 1000 (13 de nov. de 2026)
+  "ev.db.tab":          { es: "Baja 1000", en: "Baja 1000" },
+  "ev.db.kicker":       { es: "Orgullo paceño · SCORE Baja 1000", en: "La Paz pride · SCORE Baja 1000" },
+  "ev.db.title":        { es: "Don Black Racing #755 lleva nuestro emblema a la Baja 1000", en: "Don Black Racing #755 carries our emblem to the Baja 1000" },
+  "ev.db.text":         { es: "REVU 1910 apoya a Don Black Racing, el equipo de La Paz que corre la 59.ª edición de la SCORE Baja 1000 «Cabo to Cabo» en la Clase 7SX, la de camionetas de producción modificadas. Tras la revisión mecánica y la contingencia en San José del Cabo, recibe el banderazo de salida el viernes 13 de noviembre.", en: "REVU 1910 supports Don Black Racing, the La Paz team racing the 59th SCORE Baja 1000 “Cabo to Cabo” in Class 7SX, for modified production trucks. After tech inspection and contingency in San José del Cabo, it takes the green flag on Friday, November 13." },
+  "ev.db.classLabel":   { es: "Clase", en: "Class" },
+  "ev.db.startLabel":   { es: "Salida", en: "Start" },
+  "ev.db.start":        { es: "Vie. 13 de nov. · 9:00 AM", en: "Fri, Nov 13 · 9:00 AM" },
+  "ev.db.limitLabel":   { es: "Tiempo límite", en: "Time limit" },
+  "ev.db.limit":        { es: "40 horas", en: "40 hours" },
+  "ev.db.foot":         { es: "¡Mucho éxito, equipo! Los esperamos en la meta.", en: "Best of luck, team! See you at the finish line." },
+  "ev.db.alt":          { es: "Costado de la camioneta de Don Black Racing: el emblema dorado de REVU 1910 junto al logotipo del equipo", en: "Side of the Don Black Racing truck: the golden REVU 1910 emblem next to the team logo" },
+  "ev.db.open":         { es: "Abrir completa la foto del emblema de REVU 1910 en la camioneta", en: "Open the full photo of the REVU 1910 emblem on the truck" },
+  "ev.db.thumb1":       { es: "De perfil", en: "Side view" },
+  "ev.db.thumb1Alt":    { es: "La camioneta #755 de Don Black Racing vista de costado.", en: "Don Black Racing’s #755 truck seen from the side." },
+  "ev.db.thumb2":       { es: "De frente", en: "Front view" },
+  "ev.db.thumb2Alt":    { es: "La camioneta #755 de Don Black Racing vista de frente.", en: "Don Black Racing’s #755 truck seen from the front." },
   "events.none":      { es: "No hay fechas publicadas por ahora", en: "No dates published right now" },
   "events.noneText":  { es: "Estamos preparando la siguiente experiencia. Síguenos en Instagram o Facebook, o escríbenos por WhatsApp para avisarte en cuanto abramos lugares.", en: "We're preparing the next experience. Follow us on Instagram or Facebook, or message us on WhatsApp and we'll let you know as soon as spots open." },
   "events.notify":    { es: "Avísenme del próximo", en: "Notify me of the next one" },
   "events.past":      { es: "Ediciones anteriores", en: "Past editions" },
   "events.pastNote":  { es: "Así se han vivido nuestras experiencias más recientes.", en: "A look at our most recent experiences." },
 
+  "ev.hwNoche.date":  { es: "31 de octubre de 2026", en: "October 31, 2026" },
+  "ev.hwNoche.title": { es: "Halloween en el Extraño Mundo de Jack", en: "Halloween in Jack’s Strange World" },
+  "ev.hwNoche.text":  { es: "Por una noche la casa se transformó en un rincón extraño, misterioso y encantador, entre tazas, dulces, sombras y disfraces.", en: "For one night the house became a strange, mysterious and charming corner, among cups, sweets, shadows and costumes." },
+  "ev.hwCata.date":   { es: "27 de octubre de 2026", en: "October 27, 2026" },
+  "ev.hwCata.title":  { es: "Cata de Té Halloween", en: "Halloween Tea Tasting" },
+  "ev.hwCata.text":   { es: "Un viaje de aromas y sabores por un mundo muy peculiar: una cata dedicada por completo a los tés negros, guiada por nuestra Sommelier de Té certificada.", en: "A journey of aromas and flavors through a very peculiar world: a tasting devoted entirely to black teas, guided by our certified Tea Sommelier." },
   "ev.tres.date":     { es: "22 de septiembre de 2026", en: "September 22, 2026" },
   "ev.tres.title":    { es: "Tres Colores · México en una taza", en: "Tres Colores · Mexico in a cup" },
   "ev.tres.text":     { es: "Una experiencia sensorial donde los sabores, aromas y colores de México se unieron en una taza de té, guiada por nuestra Sommelier de Té certificada.", en: "A sensory experience where the flavors, aromas and colors of Mexico came together in a cup of tea, guided by our certified Tea Sommelier." },
@@ -288,8 +310,6 @@ const I18N = {
   "footer.hoursTitle":{ es: "Horario", en: "Hours" },
   "footer.hoursValue":{ es: "Lunes a sábado<br />16:00 – 22:00", en: "Monday to Saturday<br />4:00 – 10:00 PM" },
   "footer.closed":    { es: "Domingo: cerrado", en: "Sunday: closed" },
-  "footer.backTitle": { es: "¡Ya estamos de vuelta!", en: "We're back!" },
-  "footer.backText":  { es: "A partir del 8 de septiembre retomamos nuestro horario de siempre.", en: "As of September 8 we are back to our regular hours." },
   "form.sundayClosed":{ es: "Los domingos permanecemos cerrados. Elige otro día, por favor.", en: "We are closed on Sundays. Please choose another day." },
   "footer.contactTitle": { es: "Contacto", en: "Contact" },
   "footer.followTitle": { es: "Síguenos", en: "Follow us" },
@@ -408,19 +428,27 @@ const TES = [
 
 /* Bebidas y postres de temporada (por tiempo limitado) */
 const TEMPORADA = {
-  bebidas: [
-    { nombre: "Chai Pumpkin", desc: { es: "Mezcla de especias de la India con un toque de sabor a calabaza. Base té negro o té verde", en: "A blend of Indian spices with a touch of pumpkin. Black or green tea base" }, precio: 125 },
-    { nombre: { es: "Frappé de Calabaza", en: "Pumpkin Frappé" }, desc: { es: "Puré de calabaza natural con notas de nuez y canela", en: "Natural pumpkin purée with notes of walnut and cinnamon" }, precio: 150 },
-    { nombre: "Pumpkin Latte", desc: { es: "Combinación de café, dulzura de calabaza con especias y leche", en: "Coffee, sweet spiced pumpkin and milk" }, precio: 105 },
-    { nombre: "Pumpkin Chai Frappe", desc: { es: "Combinación de calabaza con el picante suave del chai", en: "Pumpkin with the gentle heat of chai" }, precio: 140 },
-    { nombre: "Spooky Matcha Latte", desc: { es: "Bebida helada con mermelada de blueberry, matcha y leche", en: "Iced drink with blueberry jam, matcha and milk" }, precio: 135 },
+  cafe: [
+    { nombre: "Moka Peppermint", desc: { es: "Combinación de café, chocolate y menta (en leche)", en: "Coffee, chocolate and peppermint (with milk)" }, precio: 125 },
+    { nombre: "Caramel Macchiato", desc: { es: "Combinación de chocolate blanco, café y cajeta (base leche)", en: "White chocolate, coffee and cajeta (milk base)" }, precio: 125 },
+    { nombre: { es: "Latte con elección de shot", en: "Latte with your choice of shot" }, desc: { es: "Avellana, gingerbread o chocolate blanco", en: "Hazelnut, gingerbread or white chocolate" }, precio: 105 },
+    { nombre: { es: "Chocolate caliente", en: "Hot chocolate" }, desc: "", precio: 105 },
   ],
+  // Los tres tés comparten precio: tetera para 1, 2 o 3 personas
+  tes: {
+    teteras: [{ para: 1, precio: 90 }, { para: 2, precio: 165 }, { para: 3, precio: 185 }],
+    items: [
+      { nombre: "Gingerbread", desc: { es: "Té negro, rooibos, jengibre y vainilla", en: "Black tea, rooibos, ginger and vanilla" } },
+      { nombre: { es: "Té negro vainilla caramelo", en: "Vanilla caramel black tea" }, desc: "" },
+      { nombre: { es: "Pu-erh, naranja y jengibre", en: "Pu-erh, orange and ginger" }, desc: "" },
+    ],
+  },
   postres: [
-    { nombre: { es: "Muffin de calabaza", en: "Pumpkin muffin" }, desc: "", precio: 75 },
-    { nombre: { es: "Muffin de calabaza relleno de cheesecake", en: "Pumpkin muffin filled with cheesecake" }, desc: "", precio: 105 },
-    { nombre: { es: "Tarta de calabaza", en: "Pumpkin pie" }, desc: "", precio: 115 },
-    { nombre: { es: "Cheesecake de calabaza", en: "Pumpkin cheesecake" }, desc: "", precio: 95 },
-    { nombre: { es: "Cheesecake de dátil", en: "Date cheesecake" }, desc: "", precio: 95 },
+    { nombre: { es: "Muffin de plátano-chocolate", en: "Banana-chocolate muffin" }, desc: "", precio: 80 },
+    { nombre: { es: "Muffin red velvet relleno de cheesecake", en: "Red velvet muffin filled with cheesecake" }, desc: "", precio: 90 },
+    { nombre: { es: "Muffin de manzana y canela", en: "Apple cinnamon muffin" }, desc: "", precio: 75 },
+    { nombre: { es: "Tarta de pera, romero y jengibre", en: "Pear, rosemary and ginger tart" }, desc: "", precio: 95 },
+    { nombre: { es: "Tarta de manzana y canela", en: "Apple cinnamon tart" }, desc: "", precio: 95 },
   ],
 };
 
@@ -567,26 +595,45 @@ function renderMenu() {
       </div>
     </div>`;
 
-  /* --- Temporada (carta de otoño, con identidad propia) --- */
+  /* --- Temporada (carta de invierno, con identidad propia) --- */
+  const adorno = (id, caja, clase) =>
+    `<svg class="${clase}" viewBox="${caja}" aria-hidden="true" focusable="false"><use href="#${id}"/></svg>`;
+  const cascanueces = adorno("nutcracker", "0 0 44 100", "season__nut");
   const temporada = `
     <div class="menu__panel" data-cat="temporada">
       <div class="season">
-        <span class="season__leaf season__leaf--tl" aria-hidden="true"><svg viewBox="0 0 140 140"><use href="#branch-autumn"/></svg></span>
-        <span class="season__leaf season__leaf--br" aria-hidden="true"><svg viewBox="0 0 140 140"><use href="#branch-autumn"/></svg></span>
         <div class="season__head">
           <p class="season__badge">${t("m.group.season")}</p>
-          <h3 class="season__title">${t("m.season.title")}</h3>
+          <div class="season__marquee">
+            ${cascanueces}
+            <h3 class="season__title">${t("m.season.title")}</h3>
+            ${cascanueces}
+          </div>
+          ${adorno("garland-holly", "0 0 360 104", "season__garland")}
           <p class="season__note">${t("m.season.text")}</p>
         </div>
         <div class="menu__group">
-          <h3 class="menu__group-title">${t("m.season.drinks")}</h3>
-          <ul class="menu__list menu__list--cols">${TEMPORADA.bebidas.map(itemRow).join("")}</ul>
+          <h3 class="menu__group-title">${t("m.season.coffee")}</h3>
+          <ul class="menu__list menu__list--cols">${TEMPORADA.cafe.map(itemRow).join("")}</ul>
+        </div>
+        <div class="menu__group">
+          <h3 class="menu__group-title">${t("m.season.teas")}</h3>
+          <ul class="season__pots">${TEMPORADA.tes.teteras.map((p) => `
+            <li><span>${t("m.teas.potFor")} ${p.para}</span><strong>${precio(p.precio)}</strong></li>`).join("")}
+          </ul>
+          <ul class="season__teas">${TEMPORADA.tes.items.map((i) => `
+            <li>
+              <span class="menu__item-name">${tr(i.nombre)}</span>
+              ${i.desc ? `<span class="season__tea-desc">${tr(i.desc)}</span>` : ""}
+            </li>`).join("")}
+          </ul>
         </div>
         <div class="menu__group">
           <h3 class="menu__group-title">${t("m.season.desserts")}</h3>
           <ul class="menu__list menu__list--cols">${TEMPORADA.postres.map(itemRow).join("")}</ul>
         </div>
-        <p class="season__foot">${t("m.seasonalNote")}</p>
+        <p class="season__foot">${t("m.season.ask")}</p>
+        ${adorno("sprig-pine", "0 0 320 100", "season__sprig")}
       </div>
     </div>`;
 
@@ -735,6 +782,8 @@ function initStorySlider() {
 
 /* --------------------------- Eventos ----------------------------- */
 const EVENTOS = [
+  { key: "hwNoche", img: "images/evento-halloween-jack.jpg" },
+  { key: "hwCata", img: "images/evento-cata-halloween.jpg" },
   { key: "tres", img: "images/evento-cata-tres-colores.jpg" },
   { key: "brujas", img: "images/galeria-teteras.jpg" },
   { key: "dia", img: "images/evento-te.jpg" },
@@ -1027,8 +1076,6 @@ function whatsappTexts() {
         greet: `¡Hola ${CONFIG.nombreNegocio}! Quiero reservar una mesa 🫖`,
         name: "Nombre", people: "Personas", date: "Fecha", time: "Hora", notes: "Notas",
         opening: "Abriendo WhatsApp… si no abre, revisa tu bloqueador de ventanas.",
-        evCata: `¡Hola ${CONFIG.nombreNegocio}! Quiero apartar mi lugar para la Cata de Té Halloween del martes 27 de octubre a las 5:00 PM.`,
-        evHalloween: `¡Hola ${CONFIG.nombreNegocio}! Quiero apartar mesa para la noche de Halloween del sábado 31 de octubre.`,
         shop: `¡Hola ${CONFIG.nombreNegocio}! Quisiera saber qué tienen disponible en la boutique.`,
       }
     : {
@@ -1036,8 +1083,6 @@ function whatsappTexts() {
         greet: `Hi ${CONFIG.nombreNegocio}! I'd like to book a table 🫖`,
         name: "Name", people: "Guests", date: "Date", time: "Time", notes: "Notes",
         opening: "Opening WhatsApp… if it doesn't open, check your pop-up blocker.",
-        evCata: `Hi ${CONFIG.nombreNegocio}! I'd like to reserve a spot for the Halloween Tea Tasting on Tuesday, October 27 at 5:00 PM.`,
-        evHalloween: `Hi ${CONFIG.nombreNegocio}! I'd like to book a table for Halloween night on Saturday, October 31.`,
         shop: `Hi ${CONFIG.nombreNegocio}! I'd like to know what you have available in the shop.`,
       };
 }
